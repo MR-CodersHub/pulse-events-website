@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Live | High-Energy Events & Nightlife</title>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PULSE</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home-2.html" class="nav-link active">Live</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger" id="profile-trigger">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-content">
+                        <!-- Dynamic Content via main.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Niche Hero (Nightlife Inspired) -->
+    <section class="hero-elaborate"
+        style="background: linear-gradient(rgba(11,11,16,0.3), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container text-center animate-reveal">
+            <h1 style="font-size: 8rem; margin-bottom: 24px; color: var(--neon-pink); line-height: 0.8;">Pulse Live</h1>
+            <p style="font-size: 1.5rem; letter-spacing: 6px; text-transform: uppercase; font-weight: 800;">Curating the
+                Beats of Tomorrow.</p>
+            <div style="margin-top: 48px; display: flex; gap: 24px; justify-content: center;">
+                <a href="#lineup" class="btn btn-secondary" style="padding: 18px 40px;">View Lineup</a>
+                <a href="contact.html" class="btn btn-outline" style="padding: 18px 40px;">Technical Specs</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-angled"></div>
+
+    <!-- SECTION 2: Festival Grid / Venues -->
+    <section class="section" id="lineup" style="background: var(--midnight-black); padding: 120px 0;">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 80px;">
+                <h2 style="font-size: 3.5rem; letter-spacing: 4px;">World Class Venues</h2>
+                <div style="width: 100px; height: 4px; background: var(--electric-purple); margin: 24px auto;"></div>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">From stadium peaks to underground secrets.</p>
+            </div>
+
+            <div class="interactive-grid">
+                <div class="event-card animate-reveal">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80"
+                        alt="Venue 1">
+                    <div class="event-card-overlay">
+                        <span
+                            style="color: var(--neon-pink); font-weight: 900; font-size: 0.8rem; letter-spacing: 2px;">ELITE
+                            STAGE</span>
+                        <h3 style="margin-top: 16px;">Main Stage Stadium</h3>
+                        <p style="color: var(--text-muted);">50k Capacity Production Architecture</p>
+                    </div>
+                </div>
+                <div class="event-card animate-reveal">
+                    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1200&q=80"
+                        alt="Venue 2">
+                    <div class="event-card-overlay">
+                        <span
+                            style="color: var(--electric-purple); font-weight: 900; font-size: 0.8rem; letter-spacing: 2px;">UNDERGROUND</span>
+                        <h3 style="margin-top: 16px;">Neon Warehouse</h3>
+                        <p style="color: var(--text-muted);">Immersive 360&deg; Audio Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Artist Roster / Lineup Section -->
+    <section class="section"
+        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: center;">
+                <div class="animate-reveal">
+                    <span
+                        style="color: var(--neon-pink); font-weight: 800; letter-spacing: 3px; text-transform: uppercase;">Curated
+                        Talent</span>
+                    <h2 style="font-size: 3.5rem; margin: 24px 0;">Elite Artist <br>Roster 2026</h2>
+                    <p style="color: var(--text-muted); font-size: 1.2rem; margin-bottom: 40px;">We manage and host the
+                        most explosive performers in the global circuit. From techno pioneers to stadium pop stars.</p>
+                    <a href="booking.html" class="btn btn-primary">Book Talent</a>
+                </div>
+                <div class="animate-reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                    <div class="card-glass" style="text-align: center; padding: 40px;">
+                        <img src="./assets/img/artist1.jpg"
+                            alt="DJ 1"
+                            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--neon-pink); margin-bottom: 20px;">
+                        <h4>CYBER PUNK</h4>
+                        <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 8px;">TECHNO / ACID</p>
+                    </div>
+                    <div class="card-glass" style="text-align: center; padding: 40px;">
+                        <img src="./assets/img/artist2.jpg"
+                            alt="DJ 2"
+                            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--electric-purple); margin-bottom: 20px;">
+                        <h4>NOVA RAY</h4>
+                        <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 8px;">MELODIC TRANCE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Technical Production Edge -->
+    <section class="section"
+        style="background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1514525253361-bee8d40d440c?auto=format&fit=crop&w=1920&q=80') center/cover; padding: 150px 0;">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 80px;">
+                <h2 style="font-size: 4rem;">Technical Supremacy</h2>
+                <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 700px; margin: 20px;">We leverage
+                    the high-tier hardware to ensure your event sounds as good as it looks.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                <div class="card-glass animate-reveal">
+                    <i class="fas fa-volume-up"
+                        style="font-size: 2.5rem; color: var(--neon-pink); margin-bottom: 24px;"></i>
+                    <h4>L-Acoustics K1</h4>
+                    <p style="color: var(--text-muted);">The industry standard for stadium-scale sonic clarity and
+                        punch.</p>
+                </div>
+                <div class="card-glass animate-reveal">
+                    <i class="fas fa-bolt"
+                        style="font-size: 2.5rem; color: var(--electric-purple); margin-bottom: 24px;"></i>
+                    <h4>GrandMA3 Pro</h4>
+                    <p style="color: var(--text-muted);">Advanced lighting control for complex, choreographed visual
+                        masterpieces.</p>
+                </div>
+                <div class="card-glass animate-reveal">
+                    <i class="fas fa-video"
+                        style="font-size: 2.5rem; color: var(--neon-pink); margin-bottom: 24px;"></i>
+                    <h4>4K LED Walls</h4>
+                    <p style="color: var(--text-muted);">Ultra-dense pixel mapping for immersive cinematic environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Final Live CTA -->
+    <section class="section" style="background: var(--midnight-black); padding: 120px 0;">
+        <div class="container">
+            <div class="card-glass animate-reveal"
+                style="padding: 100px; text-align: center; border: 2px solid var(--electric-purple); position: relative; overflow: hidden;">
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(90deg, var(--electric-purple), var(--neon-pink));">
+                </div>
+                <h2 style="font-size: 4rem; margin-bottom: 24px;">Start The Beat</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 48px; font-size: 1.25rem;">Whether
+                    it's a 50k stadium festival or an elite club night, Pulse Live brings the technical edge you need.
+                </p>
+                <div style="display: flex; gap: 24px; justify-content: center;">
+                    <a href="contact.html" class="btn btn-secondary" style="padding: 20px 60px;">Request Technical
+                        Spec</a>
+                    <a href="pricing.html" class="btn btn-outline" style="padding: 20px 60px;">View Packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">PULSE</a>
+                    <p style="margin-top: 24px; color: var(--text-muted);">Redefining the standards of global event
+                        management and cinematic production since 2014.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
+                        
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Connect</h4>
+                    <div style="display: flex; gap: 24px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Legal</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
+                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

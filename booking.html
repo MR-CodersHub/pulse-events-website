@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Your Vision | Booking PulseEvents</title>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PULSE</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger" id="profile-trigger">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-content">
+                        <!-- Dynamic Content via main.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Booking Hero -->
+    <header class="hero-elaborate"
+        style="height: 45vh; min-height: 400px; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container text-center animate-reveal">
+            <h1 style="font-size: 5rem; margin-bottom: 24px;">Secure Your Vision</h1>
+            <p style="color: var(--neon-pink); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
+                Initialize Elite Production Architecture.</p>
+        </div>
+    </header>
+
+    <div class="divider-angled"></div>
+
+    <!-- SECTION 2: Booking Form -->
+    <section class="section" style="padding: 120px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px;">
+                <div class="animate-reveal">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 40px;">Request A Pulse</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 32px;">Provide your technical
+                        requirements and event scale. Our production leads will review your inquiry within 4 hours.</p>
+
+                    <div class="card-glass" style="margin-bottom: 24px;">
+                        <h4 style="color: var(--electric-purple); margin-bottom: 16px;">Step 01: Intake</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Identify your project scope and artist
+                            requirements.</p>
+                    </div>
+                    <div class="card-glass" style="margin-bottom: 24px;">
+                        <h4 style="color: var(--neon-pink); margin-bottom: 16px;">Step 02: Analysis</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Technical CAD blueprinting and site
+                            survey.</p>
+                    </div>
+                    <div class="card-glass">
+                        <h4 style="color: var(--electric-purple); margin-bottom: 16px;">Step 03: Deployment</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Full-scale production execution and
+                            logistics.</p>
+                    </div>
+                </div>
+
+                <div class="animate-reveal">
+                    <form id="booking-form" class="card-glass" style="padding: 60px;" onsubmit="handleBooking(event)">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">CLIENT
+                                    NAME</label>
+                                <input type="text" id="clientName" required
+                                    style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">CORPORATE
+                                    EMAIL</label>
+                                <input type="email" id="clientEmail" required
+                                    style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none;">
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">EVENT
+                                    DATE</label>
+                                <input type="date" id="eventDate" required
+                                    style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none; color-scheme: dark;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <label
+                                    style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">ANTICIPATED
+                                    ATTENDEES</label>
+                                <select id="attendees" required
+                                    style="background: var(--midnight-black); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none;">
+                                    <option value="500">Below 500</option>
+                                    <option value="5k">500 - 5,000</option>
+                                    <option value="20k">5,000 - 20,000</option>
+                                    <option value="stadium">Stadium Scale (20k+)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 48px;">
+                            <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">TECHNICAL
+                                SPECS / REQUESTS</label>
+                            <textarea id="specs" rows="5"
+                                placeholder="e.g. L-Acoustics Sound, 4K LED Walls, Pyrotechnics Requirements..."
+                                style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none; resize: none;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" style="width: 100%; padding: 20px;">Initialize
+                            Booking Sequence</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Booking FAQ Snippet -->
+    <section class="section"
+        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container text-center animate-reveal">
+            <h2 style="font-size: 2.5rem; margin-bottom: 60px;">Booking Protocol</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                <div class="card-glass">
+                    <i class="fas fa-shield-alt"
+                        style="font-size: 2rem; color: var(--electric-purple); margin-bottom: 24px;"></i>
+                    <h4 style="margin-bottom: 16px;">Security Deposit</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">A 30% technical deployment deposit is
+                        required to secure equipment and crew for your dates.</p>
+                </div>
+                <div class="card-glass">
+                    <i class="fas fa-clock" style="font-size: 2rem; color: var(--neon-pink); margin-bottom: 24px;"></i>
+                    <h4 style="margin-bottom: 16px;">Lead Time</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">We recommend at least 3 months for festival
+                        production and 4 weeks for corporate launches.</p>
+                </div>
+                <div class="card-glass">
+                    <i class="fas fa-globe"
+                        style="font-size: 2rem; color: var(--electric-purple); margin-bottom: 24px;"></i>
+                    <h4 style="margin-bottom: 16px;">Global Specs</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">We operate worldwide. Travel and logistics
+                        for specialized equipment will be detailed in your quote.</p>
+                </div>
+            </div>
+            <div style="margin-top: 80px;">
+                <p style="color: var(--text-muted);">Have more questions? <a href="faq.html"
+                        style="color: var(--neon-pink); font-weight: 700;">Visit our FAQ Center</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">PULSE</a>
+                    <p style="margin-top: 24px; color: var(--text-muted);">Redefining the standards of global event
+                        management and cinematic production since 2014.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
+
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Connect</h4>
+                    <div style="display: flex; gap: 24px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Legal</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
+                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function handleBooking(e) {
+            e.preventDefault();
+
+            const bookingData = {
+                id: Date.now(),
+                name: document.getElementById('clientName').value,
+                email: document.getElementById('clientEmail').value,
+                date: document.getElementById('eventDate').value,
+                attendees: document.getElementById('attendees').value,
+                specs: document.getElementById('specs').value,
+                status: 'Confirmed',
+                revenue: Math.floor(Math.random() * 50000) + 10000 // Randomized revenue for demo
+            };
+
+            const bookings = JSON.parse(localStorage.getItem('bookings') || '[]');
+            bookings.push(bookingData);
+            localStorage.setItem('bookings', JSON.stringify(bookings));
+
+            alert('Booking request initialized. A production lead will contact you shortly.');
+            e.target.reset();
+        }
+    </script>
+</body>
+
+</html>

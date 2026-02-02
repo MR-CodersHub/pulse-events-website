@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Management | PulseEvents</title>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PULSE</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger" id="profile-trigger">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-content">
+                        <!-- Dynamic Content via main.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Service Hero -->
+    <header class="hero-elaborate"
+        style="height: 60vh; background: linear-gradient(rgba(11,11,16,0.2), rgba(11,11,16,1)), url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container hero-content">
+            <div class="animate-reveal">
+                <span
+                    style="color: var(--neon-pink); font-weight: 800; letter-spacing: 5px; text-transform: uppercase;">A-List
+                    Access</span>
+                <h1 style="font-size: 6rem; line-height: 1; margin: 20px 0;">Talent <br>Management</h1>
+                <p style="font-size: 1.3rem; color: var(--text-muted); max-width: 600px;">Strategic scouting, elite
+                    negotiation, and concierge-level logistics for the world's most demanding performers.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="divider-angled"></div>
+
+    <!-- SECTION 2: Technical Deep Dive -->
+    <section class="section" style="padding: 120px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; align-items: center;">
+                <div class="animate-reveal">
+                    <h2 style="font-size: 3rem; margin-bottom: 32px;">Elite Artist Logistics</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px;">
+                        Handling international talent requires more than just a booking; it requires a deep
+                        understanding of artist riders, technical requirements, and high-security hospitality. Our team
+                        acts as the primary bridge between global agencies and your event floor.</p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                        <div class="card-glass" style="padding: 32px;">
+                            <h4 style="color: var(--electric-purple); margin-bottom: 12px;">Rider Fulfillment</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">From vintage analog synths to
+                                specific dietary protocols, we ensure every detail of the rider is met.</p>
+                        </div>
+                        <div class="card-glass" style="padding: 32px;">
+                            <h4 style="color: var(--neon-pink); margin-bottom: 12px;">Global Visas</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Navigating complex international
+                                travel permits and work visas for touring parties.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-reveal">
+                    <div class="card-glass" style="padding: 0; overflow: hidden; border-radius: 24px;">
+                        <img src="./assets/img/artist2.jpg"
+                            alt="Talent" style="width: 100%; display: block;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: The Pulse Edge (Features) -->
+    <section class="section"
+        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 80px;">
+                <h2 style="font-size: 3rem;">Service Pillars</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">The foundation of our artist relations.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                <div class="card-glass animate-reveal"
+                    style="padding: 48px; border-bottom: 4px solid var(--electric-purple);">
+                    <i class="fas fa-handshake"
+                        style="font-size: 2.5rem; color: var(--electric-purple); margin-bottom: 24px;"></i>
+                    <h4>Strategic Booking</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Leveraging long-standing relationships with
+                        major agencies like CAA, WME, and UTA.</p>
+                </div>
+                <div class="card-glass animate-reveal"
+                    style="padding: 48px; border-bottom: 4px solid var(--neon-pink);">
+                    <i class="fas fa-shield"
+                        style="font-size: 2.5rem; color: var(--neon-pink); margin-bottom: 24px;"></i>
+                    <h4>Elite Security</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Close-protection details and secured
+                        transport protocols for high-profile individuals.</p>
+                </div>
+                <div class="card-glass animate-reveal"
+                    style="padding: 48px; border-bottom: 4px solid var(--electric-purple);">
+                    <i class="fas fa-plane-arrival"
+                        style="font-size: 2.5rem; color: var(--electric-purple); margin-bottom: 24px;"></i>
+                    <h4>Concierge Care</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Luxury accommodation and private jet
+                        coordination for headlining talent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Service CTA -->
+    <section class="section"
+        style="padding: 150px 0; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container text-center animate-reveal">
+            <h2 style="font-size: 4rem; margin-bottom: 32px;">Book Global Talent</h2>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 0 0 60px; font-size: 1.25rem;">Ready to
+                bring world-class performers to your stage? Our relations team is standing by.</p>
+            <div style="display: flex; gap: 24px; justify-content: center;">
+                <a href="booking.html" class="btn btn-primary" style="padding: 20px 60px;">Begin Inquiry</a>
+                <a href="services.html" class="btn btn-outline" style="padding: 20px 60px;">Other Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">PULSE</a>
+                    <p style="margin-top: 24px; color: var(--text-muted);">Redefining the standards of global event
+                        management and cinematic production since 2014.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
+                        
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Connect</h4>
+                    <div style="display: flex; gap: 24px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Legal</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
+                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pulse Lens | PulseEvents Blog</title>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PULSE</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger" id="profile-trigger">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-content">
+                        <!-- Dynamic Content via main.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Header -->
+    <header class="hero-elaborate"
+        style="height: 40vh; min-height: 350px; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container text-center animate-reveal">
+            <h1 style="font-size: 4.5rem;">The Pulse Lens</h1>
+            <p style="color: var(--electric-purple); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
+                Insights into Cinematic Event Production.</p>
+        </div>
+    </header>
+
+    <div class="divider-angled"></div>
+
+    <!-- SECTION 2: Search & Filter -->
+    <section class="section" style="padding: 100px 0 60px;">
+        <div class="container">
+            <div class="card-glass animate-reveal"
+                style="display: flex; gap: 24px; align-items: center; padding: 32px;">
+                <div style="flex: 1; position: relative;">
+                    <i class="fas fa-search"
+                        style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+                    <input type="text" placeholder="Search insights..."
+                        style="width: 100%; background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px 16px 16px 56px; border-radius: 12px; color: #fff; outline: none; font-size: 1rem;">
+                </div>
+                <div style="display: flex; gap: 16px;">
+                    <button class="btn btn-primary">Production</button>
+                    <button class="btn btn-outline">Strategy</button>
+                    <button class="btn btn-outline">Trends</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Blog Grid -->
+    <section class="section" style="padding-bottom: 120px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                <div class="event-card animate-reveal">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80"
+                        alt="Blog 1">
+                    <div class="event-card-overlay">
+                        <span
+                            style="color: var(--neon-pink); font-weight: 900; font-size: 0.8rem; letter-spacing: 1px;">PRODUCTION</span>
+                        <h3 style="margin-top: 15px; font-size: 1.6rem;">5 Lighting Trends of 2026</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 10px;">The rise of spatial
+                            lighting and immersive stagecraft...</p>
+                        <a href="blog-lighting-trends.html"
+                            style="display: inline-block; margin-top: 20px; font-weight: 700; color: var(--soft-white);">Read
+                            Insight <i class="fas fa-chevron-right"
+                                style="font-size: 0.7rem; margin-left: 8px;"></i></a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="event-card animate-reveal">
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=600&q=80"
+                        alt="Blog 2">
+                    <div class="event-card-overlay">
+                        <span
+                            style="color: var(--electric-purple); font-weight: 900; font-size: 0.8rem; letter-spacing: 1px;">STRATEGY</span>
+                        <h3 style="margin-top: 15px; font-size: 1.6rem;">Managing Elite Artist Riders</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 10px;">Concierge-level
+                            coordination for world-class performers...</p>
+                        <a href="blog-artist-riders.html"
+                            style="display: inline-block; margin-top: 20px; font-weight: 700; color: var(--soft-white);">Read
+                            Insight <i class="fas fa-chevron-right"
+                                style="font-size: 0.7rem; margin-left: 8px;"></i></a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="event-card animate-reveal">
+                    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80"
+                        alt="Blog 3">
+                    <div class="event-card-overlay">
+                        <span
+                            style="color: var(--soft-white); font-weight: 900; font-size: 0.8rem; letter-spacing: 1px;">TRENDS</span>
+                        <h3 style="margin-top: 15px; font-size: 1.6rem;">The Future of Digital Stages</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 10px;">How VR and AR are
+                            merging with live concert production...</p>
+                        <a href="blog-digital-stages.html"
+                            style="display: inline-block; margin-top: 20px; font-weight: 700; color: var(--soft-white);">Read
+                            Insight <i class="fas fa-chevron-right"
+                                style="font-size: 0.7rem; margin-left: 8px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Newsletter / Subscription -->
+    <section class="section"
+        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="card-glass animate-reveal"
+                style="padding: 80px; text-align: center; background: linear-gradient(135deg, rgba(123, 63, 228, 0.1), rgba(255, 47, 146, 0.1));">
+                <h2 style="font-size: 3rem; margin-bottom: 24px;">Subscribe to The Pulse</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 40px; font-size: 1.1rem;">Get
+                    exclusive behind-the-scenes insights and technical deep-dives delivered to your inbox.</p>
+                <form onsubmit="handleNewsletter(event)"
+                    style="display: flex; gap: 16px; max-width: 600px; margin: 0 auto;">
+                    <input type="email" id="newsletterEmail" placeholder="production@company.com" required
+                        style="flex: 1; background: var(--midnight-black); border: 1px solid var(--glass-border); padding: 16px 24px; border-radius: 12px; color: #fff; outline: none;">
+                    <button type="submit" class="btn btn-primary" style="padding: 16px 40px;">Join Pulse</button>
+                </form>
+                <script>
+                    function handleNewsletter(e) {
+                        e.preventDefault();
+                        const email = document.getElementById('newsletterEmail').value;
+                        const subscribers = JSON.parse(localStorage.getItem('subscribers') || '[]');
+                        if (!subscribers.includes(email)) {
+                            subscribers.push(email);
+                            localStorage.setItem('subscribers', JSON.stringify(subscribers));
+                        }
+                        alert('Pulse Newsletter initialized. Welcome to the elite roster.');
+                        e.target.reset();
+                    }
+                </script>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">PULSE</a>
+                    <p style="margin-top: 24px; color: var(--text-muted);">Redefining the standards of global event
+                        management and cinematic production since 2014.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
+
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Connect</h4>
+                    <div style="display: flex; gap: 24px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Legal</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
+                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

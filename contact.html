@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch | PulseEvents</title>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PULSE</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger" id="profile-trigger">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-content">
+                        <!-- Dynamic Content via main.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Header -->
+    <header class="hero-elaborate"
+        style="height: 45vh; min-height: 400px; background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.95)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container text-center animate-reveal">
+            <h1 style="font-size: 5rem;">Get In Touch</h1>
+            <p style="color: var(--electric-purple); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
+                Let's Orchestrate Your Vision.</p>
+        </div>
+    </header>
+
+    <div class="divider-angled"></div>
+
+    <!-- SECTION 2: Contact Info & Form -->
+    <section class="section" style="padding: 120px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px;">
+                <div class="animate-reveal">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 48px;">Production Hub</h2>
+                    <div class="card-glass" style="margin-bottom: 40px; padding: 40px;">
+                        <div style="display: flex; gap: 24px; align-items: center; margin-bottom: 40px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--neon-pink); font-size: 1.8rem;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 8px;">Headquarters</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">PulseEvents HQ – Chennai, India
+                                </p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 24px; align-items: center; margin-bottom: 40px;">
+                            <i class="fas fa-envelope" style="color: var(--electric-purple); font-size: 1.8rem;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 8px;">Production Desk</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">inquiry@pulseevents.com</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 24px; align-items: center;">
+                            <i class="fas fa-phone-alt" style="color: var(--neon-pink); font-size: 1.8rem;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 8px;">Elite Support</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">+91 98765 43210</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-glass text-center" style="padding: 40px; border-style: dashed;">
+                        <h4 style="margin-bottom: 16px;">Global Availability</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">We deploy worldwide. Connect with us for
+                            international site surveys and specs.</p>
+                    </div>
+                </div>
+
+                <div class="animate-reveal">
+                    <form id="contact-form" onsubmit="handleContact(event)" class="card-glass" style="padding: 60px;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">FULL
+                                    NAME</label>
+                                <input type="text" id="contactName" required
+                                    style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">EMAIL
+                                    ADDRESS</label>
+                                <input type="email" id="contactEmail" required
+                                    style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none;">
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <label
+                                    style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">PHONE</label>
+                                <input type="tel" id="contactPhone" required
+                                    style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">EVENT
+                                    TYPE</label>
+                                <select id="eventType" required
+                                    style="background: var(--midnight-black); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none;">
+                                    <option value="concert">Live Concert / Festival</option>
+                                    <option value="corporate">Corporate Launch</option>
+                                    <option value="private">Luxury Private Event</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 48px;">
+                            <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">MESSAGE /
+                                SPECS</label>
+                            <textarea id="contactMessage" rows="5" required
+                                style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none; resize: none;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 20px;">Initialize
+                            Production Inquiry</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Global Presence / Offices -->
+    <section class="section"
+        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 80px;">
+                <h2 style="font-size: 3rem;">Global Presence</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 16px;">Operative across multiple time
+                    zones to meet your demands.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                <div class="card-glass text-center animate-reveal">
+                    <h4 style="margin-bottom: 16px; color: var(--electric-purple);">South Asia</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Chennai, India • Bangalore, India</p>
+                </div>
+                <div class="card-glass text-center animate-reveal">
+                    <h4 style="margin-bottom: 16px; color: var(--neon-pink);">Middle East</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Dubai, UAE • Riyadh, KSA</p>
+                </div>
+                <div class="card-glass text-center animate-reveal">
+                    <h4 style="margin-bottom: 16px; color: var(--electric-purple);">Europe</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">London, UK • Berlin, Germany</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">PULSE</a>
+                    <p style="margin-top: 24px; color: var(--text-muted);">Redefining the standards of global event
+                        management and cinematic production since 2014.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
+
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Connect</h4>
+                    <div style="display: flex; gap: 24px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Legal</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
+                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function handleContact(e) {
+            e.preventDefault();
+
+            const contactData = {
+                id: Date.now(),
+                name: document.getElementById('contactName').value,
+                email: document.getElementById('contactEmail').value,
+                phone: document.getElementById('contactPhone').value,
+                type: document.getElementById('eventType').value,
+                message: document.getElementById('contactMessage').value,
+                date: new Date().toISOString()
+            };
+
+            const contacts = JSON.parse(localStorage.getItem('contacts') || '[]');
+            contacts.push(contactData);
+            localStorage.setItem('contacts', JSON.stringify(contacts));
+
+            alert('Your inquiry has been relayed to our production lead. Expect a response within 4 hours.');
+            e.target.reset();
+        }
+    </script>
+</body>
+
+</html>

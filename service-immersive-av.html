@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersive AV | PulseEvents</title>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PULSE</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger" id="profile-trigger">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-content">
+                        <!-- Dynamic Content via main.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Service Hero -->
+    <header class="hero-elaborate"
+        style="height: 60vh; background: linear-gradient(rgba(11,11,16,0.2), rgba(11,11,16,1)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container hero-content">
+            <div class="animate-reveal">
+                <span
+                    style="color: var(--neon-pink); font-weight: 800; letter-spacing: 5px; text-transform: uppercase;">Sensory
+                    Dominance</span>
+                <h1 style="font-size: 6rem; line-height: 1; margin: 20px 0;">Immersive <br>AV Systems</h1>
+                <p style="font-size: 1.3rem; color: var(--text-muted); max-width: 600px;">Cutting-edge audio-visual
+                    production involving spatial audio, projection mapping, and neural-sync lighting.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="divider-angled"></div>
+
+    <!-- SECTION 2: Technical Deep Dive -->
+    <section class="section" style="padding: 120px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; align-items: center;">
+                <div class="animate-reveal">
+                    <h2 style="font-size: 3rem; margin-bottom: 32px;">The Sonic Architecture</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px;">We
+                        don't just amplify sound; we sculpt it. Our immersive AV department specializes in high-density
+                        loudspeaker arrays that create a "spatial object" environment, allowing sound to move through
+                        the venue with physical presence. Combined with pixel-perfect projection mapping, we create
+                        worlds that breathe.</p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                        <div class="card-glass" style="padding: 32px;">
+                            <h4 style="color: var(--electric-purple); margin-bottom: 12px;">Spatial Mapping</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Laser-scanning venues to create
+                                precise digital twins for frame-accurate projection alignment.</p>
+                        </div>
+                        <div class="card-glass" style="padding: 32px;">
+                            <h4 style="color: var(--neon-pink); margin-bottom: 12px;">Immersive Sound</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Integration of Dolby Atmos and
+                                L-Acoustics L-ISA for hyper-real sonic experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-reveal">
+                    <div class="card-glass" style="padding: 0; overflow: hidden; border-radius: 24px;">
+                        <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=800&q=80"
+                            alt="AV" style="width: 100%; display: block;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: The Pulse Edge (Features) -->
+    <section class="section"
+        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 80px;">
+                <h2 style="font-size: 3rem;">Technical Modules</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">The engine room of sensory immersion.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                <div class="card-glass animate-reveal"
+                    style="padding: 48px; border-bottom: 4px solid var(--electric-purple);">
+                    <i class="fas fa-video"
+                        style="font-size: 2.5rem; color: var(--electric-purple); margin-bottom: 24px;"></i>
+                    <h4>8K Pixel Processing</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Uncompressed 8K video pipelines utilizing
+                        Disguise media servers and Barco projection.</p>
+                </div>
+                <div class="card-glass animate-reveal"
+                    style="padding: 48px; border-bottom: 4px solid var(--neon-pink);">
+                    <i class="fas fa-music"
+                        style="font-size: 2.5rem; color: var(--neon-pink); margin-bottom: 24px;"></i>
+                    <h4>Neural Audio Sync</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">AI-driven audio analysis that translates
+                        frequencies into real-time visual and lighting data.</p>
+                </div>
+                <div class="card-glass animate-reveal"
+                    style="padding: 48px; border-bottom: 4px solid var(--electric-purple);">
+                    <i class="fas fa-tower-broadcast"
+                        style="font-size: 2.5rem; color: var(--electric-purple); margin-bottom: 24px;"></i>
+                    <h4>Direct Injection</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Zero-latency fiber optic signal
+                        distribution for ultra-responsive live performance rigs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Service CTA -->
+    <section class="section"
+        style="padding: 150px 0; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container text-center animate-reveal">
+            <h2 style="font-size: 4rem; margin-bottom: 32px;">Immerse Your Crowd</h2>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 0 0 60px; font-size: 1.25rem;">Scale your
+                production beyond the screen. Let's build an environment that people can feel.</p>
+            <div style="display: flex; gap: 24px; justify-content: center;">
+                <a href="booking.html" class="btn btn-primary" style="padding: 20px 60px;">Request Technical Spec</a>
+                <a href="services.html" class="btn btn-outline" style="padding: 20px 60px;">Other Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+<footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">PULSE</a>
+                    <p style="margin-top: 24px; color: var(--text-muted);">Redefining the standards of global event
+                        management and cinematic production since 2014.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
+                        
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Connect</h4>
+                    <div style="display: flex; gap: 24px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Legal</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
+                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

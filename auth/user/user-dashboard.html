@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | PulseEvents</title>
+    <link rel="icon" href="../../assets/img/logo.png">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body style="display: flex; min-height: 100vh; background: var(--midnight-black);">
+
+    <!-- Sidebar -->
+    <aside
+        style="width: 300px; background: var(--surface); border-right: 1px solid var(--glass-border); padding: 50px 30px; display: flex; flex-direction: column;">
+        <a href="../../index.html" class="logo" style="margin-bottom: 60px;">PULSE</a>
+
+        <nav style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
+            <a href="#" class="btn btn-secondary" style="justify-content: flex-start; width: 100%;">
+                <i class="fas fa-user-circle"></i> Profile
+            </a>
+            <a href="#activity-list" class="btn btn-outline"
+                style="justify-content: flex-start; width: 100%; border: none;">
+                <i class="fas fa-ticket"></i> My Bookings
+            </a>
+
+            <a href="../../index.html" class="btn btn-outline"
+                style="justify-content: flex-start; width: 100%; border: none;">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </nav>
+
+        <div style="border-top: 1px solid var(--glass-border); padding-top: 30px;">
+            <a href="javascript:void(0)" onclick="logout()" class="btn btn-outline"
+                style="justify-content: flex-start; width: 100%; border: none; color: var(--neon-pink);">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main style="flex: 1; padding: 60px; overflow-y: auto;">
+        <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px;">
+            <div>
+                <h1 style="font-size: 2rem;">Hey, <span class="user-name">User</span>!</h1>
+                <p style="color: var(--text-muted);">Manage your bookings and private events.</p>
+            </div>
+            <a href="../../booking.html" class="btn btn-primary">Book New Vision</a>
+        </header>
+
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px;">
+            <div class="card-glass" style="text-align: center;">
+                <div
+                    style="width: 120px; height: 120px; background: var(--glass-bg); border-radius: 50%; margin: 0 auto 30px; border: 2px solid var(--neon-pink); display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <h3 class="user-name">User Name</h3>
+                <p id="user-status" style="color: var(--text-muted); margin-bottom: 30px;">Loading Status...</p>
+                <div
+                    style="text-align: left; padding-top: 30px; border-top: 1px solid var(--glass-border); display: flex; flex-direction: column; gap: 15px;">
+                    <p style="font-size: 0.9rem;"><i class="fas fa-envelope"
+                            style="width: 25px; color: var(--electric-purple);"></i> <span
+                            id="user-email">email@pulse.com</span></p>
+                    <p id="user-location" style="font-size: 0.9rem;"><i class="fas fa-map-marker-alt"
+                            style="width: 25px; color: var(--electric-purple);"></i> Loading Location...</p>
+                </div>
+
+            </div>
+
+            <div id="bookings-section">
+                <h2 style="margin-bottom: 30px;">Direct Bookings</h2>
+                <div id="user-bookings-list" style="display: flex; flex-direction: column; gap: 20px;">
+                    <!-- JS Populated Cards -->
+                    <p style="color: var(--text-muted); text-align: center; padding: 20px;">Loading your booking
+                        blueprints...</p>
+                </div>
+
+                <h2 style="margin: 60px 0 30px;">Recent Activity</h2>
+                <div id="activity-list">
+                    <!-- JS Populated List -->
+                    <p style="color: var(--text-muted); text-align: center; padding: 20px;">Loading production logs...
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/dashboard.js"></script>
+</body>
+
+
+</html>

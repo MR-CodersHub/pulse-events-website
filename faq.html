@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Center | PulseEvents</title>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PULSE</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger" id="profile-trigger">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-content">
+                        <!-- Dynamic Content via main.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Header -->
+    <header class="hero-elaborate"
+        style="height: 40vh; min-height: 350px; background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.95)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container text-center animate-reveal">
+            <h1 style="font-size: 5rem;">FAQ Center</h1>
+            <p style="color: var(--electric-purple); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
+                Technical Clarity & Protocol.</p>
+        </div>
+    </header>
+
+    <div class="divider-angled"></div>
+
+    <!-- SECTION 2: FAQ Categories -->
+    <section class="section" style="padding: 120px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 2.5fr; gap: 80px;">
+                <aside class="animate-reveal">
+                    <div class="card-glass" style="position: sticky; top: 120px;">
+                        <h3 style="margin-bottom: 32px;">Categories</h3>
+                        <ul style="display: flex; flex-direction: column; gap: 20px;">
+                            <li><a href="#production" style="color: var(--neon-pink); font-weight: 700;">Production &
+                                    Specs</a></li>
+                            <li><a href="#booking" style="color: var(--text-muted);">Booking & Deposits</a></li>
+                            <li><a href="#logistics" style="color: var(--text-muted);">Logistics & Safety</a></li>
+                            <li><a href="#artist" style="color: var(--text-muted);">Artist Management</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <div class="animate-reveal">
+                    <!-- Production -->
+                    <div id="production" style="margin-bottom: 80px;">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--electric-purple);">Production &
+                            Specs</h2>
+                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                            <div class="card-glass">
+                                <h4 style="margin-bottom: 12px;">What audio hardware do you deploy for festivals?</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">We primarily deploy L-Acoustics
+                                    K1/K2 and d&b audiotechnik GSL systems, ensuring world-class sonic pressure and
+                                    clarity across all frequencies.</p>
+                            </div>
+                            <div class="card-glass">
+                                <h4 style="margin-bottom: 12px;">Can you handle 4K pixel-mapped LED environments?</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">Yes, our media server team uses
+                                    Disguise and Resolume to handle massive-scale 4K and 8K LED content delivery with
+                                    zero latency.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Booking -->
+                    <div id="booking" style="margin-bottom: 80px;">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--neon-pink);">Booking & Deposits
+                        </h2>
+                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                            <div class="card-glass">
+                                <h4 style="margin-bottom: 12px;">What is your standard deposit structure?</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">We require a 30% technical
+                                    deployment deposit at signing, 40% 30 days prior to the event, and the final 30%
+                                    upon site handover.</p>
+                            </div>
+                            <div class="card-glass">
+                                <h4 style="margin-bottom: 12px;">What is your cancellation policy for large-scale
+                                    events?</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">Cancellations made 60+ days out
+                                    receive a 50% refund of the deposit. Inside 60 days, deposits are non-refundable due
+                                    to logistics and crew allocation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logistics -->
+                    <div id="logistics">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--electric-purple);">Logistics &
+                            Safety</h2>
+                        <div style="display: flex; flex-direction: column; gap: 24px;">
+                            <div class="card-glass">
+                                <h4 style="margin-bottom: 12px;">Do you provide on-site safety officers?</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">Every Pulse production includes a
+                                    lead safety inspector and crowd management supervisor to ensure all builds meet
+                                    international safety standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Still have questions? -->
+    <section class="section"
+        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container text-center animate-reveal">
+            <h2 style="font-size: 3rem; margin-bottom: 32px;">Pulse Support</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 48px; font-size: 1.25rem;">Our
+                technical desk is available 24/7 for production inquiries and on-site support.</p>
+            <a href="contact.html" class="btn btn-primary" style="padding: 20px 60px;">Contact Production Desk</a>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">PULSE</a>
+                    <p style="margin-top: 24px; color: var(--text-muted);">Redefining the standards of global event
+                        management and cinematic production.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Resources</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
+                        <li><a href="booking.html">Booking Portal</a></li>
+                        <li><a href="faq.html">FAQ Center</a></li>
+                        <li><a href="blog.html">Live Insights</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Legal</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Connect</h4>
+                    <div style="display: flex; gap: 24px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem;">
+                &copy; 2026 PULSE EVENTS GLOBAL. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

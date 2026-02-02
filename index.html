@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseEvents | Cinematic Nightlife & Event Production</title>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PULSE</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="profile-dropdown">
+                    <div class="profile-trigger" id="profile-trigger">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu-content">
+                        <!-- Dynamic Content via main.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: Hero Section (Inspired by Image Top) -->
+    <section class="hero-elaborate"
+        style="background: linear-gradient(rgba(11,11,16,0.4), rgba(11,11,16,0.4)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content" style="margin-left: 0px;">
+            <div class="animate-reveal">
+                <span
+                    style="color: var(--neon-pink); font-weight: 800; letter-spacing: 5px; text-transform: uppercase;">Club
+                    Blaze Presents</span>
+                <h1
+                    style="font-size: 8rem; line-height: 0.9; margin: 24px 0; font-weight: 900; background: linear-gradient(90deg, #fff, #5a2eb8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                    MIDNIGHT</h1>
+                <p
+                    style="font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 48px;">
+                    Experience the high-octane energy of cinematic events.</p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="booking.html" class="btn btn-primary" style="padding: 18px 45px;">Book Your Event <i
+                            class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
+                    <a href="services.html" class="btn btn-outline" style="padding: 18px 45px;">Explore Pulse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geometric Divider -->
+    <div class="divider-angled"></div>
+
+    <!-- SECTION 2: Featured Events (Inspired by Image "Coming Soon") -->
+    <section class="section" style="background: var(--midnight-black); padding: 120px 0;">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 80px;">
+                <h2 style="font-size: 3.5rem; letter-spacing: 4px;">Coming Soon</h2>
+                <div style="width: 100px; height: 4px; background: var(--electric-purple); margin: 24px 0;"></div>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0; font-size: 1.1rem;">The next wave
+                    of immersive experiences is about to break. Secure your vision.</p>
+            </div>
+
+            <div class="interactive-grid">
+                <div class="event-card animate-reveal">
+                    <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=600&q=80"
+                        alt="DJ Night">
+                    <div class="event-card-overlay">
+                        <span
+                            style="background: var(--neon-pink); padding: 6px 18px; border-radius: 4px; font-weight: 900; font-size: 0.8rem; letter-spacing: 1px;">14
+                            JUNE</span>
+                        <h3 style="margin-top: 20px; font-size: 1.8rem;">Neon Nights x Pulse</h3>
+                        <p style="color: var(--text-muted); font-size: 1rem;">Hallows Night X Rock the City</p>
+                    </div>
+                </div>
+                <div class="event-card animate-reveal">
+                    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80"
+                        alt="Concert">
+                    <div class="event-card-overlay">
+                        <span
+                            style="background: var(--electric-purple); padding: 6px 18px; border-radius: 4px; font-weight: 900; font-size: 0.8rem; letter-spacing: 1px;">23
+                            JULY</span>
+                        <h3 style="margin-top: 20px; font-size: 1.8rem;">Electric Sky Festival</h3>
+                        <p style="color: var(--text-muted); font-size: 1rem;">The Best Club Music Experience</p>
+                    </div>
+                </div>
+                <div class="event-card animate-reveal">
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=600&q=80"
+                        alt="Gala">
+                    <div class="event-card-overlay">
+                        <span
+                            style="background: #fff; color: #000; padding: 6px 18px; border-radius: 4px; font-weight: 900; font-size: 0.8rem; letter-spacing: 1px;">05
+                            AUG</span>
+                        <h3 style="margin-top: 20px; font-size: 1.8rem;">Corporate Launch</h3>
+                        <p style="color: var(--text-muted); font-size: 1rem;">Carnaval Do Brasil Production</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Services / Expertise Section -->
+    <section class="section"
+        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div class="animate-reveal">
+                    <span
+                        style="color: var(--electric-purple); font-weight: 800; letter-spacing: 3px; text-transform: uppercase;">Our
+                        Expertise</span>
+                    <h2 style="font-size: 3.5rem; margin: 20px 0;">Cinematic <br>Scale Production</h2>
+                    <p style="color: var(--text-muted); font-size: 1.2rem; margin-bottom: 40px;">We specialize in
+                        large-scale event production, combining world-class hardware with creative storytelling to
+                        transform venues into unforgettable worlds.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                        <div class="card-glass" style="padding: 24px;">
+                            <i class="fas fa-lightbulb"
+                                style="color: var(--neon-pink); margin-bottom: 16px; font-size: 1.5rem;"></i>
+                            <h4>Tech Design</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Acoustic and lighting architecture
+                                for stadiums.</p>
+                        </div>
+                        <div class="card-glass" style="padding: 24px;">
+                            <i class="fas fa-user-astronaut"
+                                style="color: var(--electric-purple); margin-bottom: 16px; font-size: 1.5rem;"></i>
+                            <h4>Artist Care</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Concierge-level logistics for world
+                                tours.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-reveal">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80"
+                        alt="Production" style="width: 100%; border-radius: 24px; box-shadow: var(--purple-glow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Testimonials / Wall of Fame -->
+    <section class="section" style="background: var(--midnight-black); padding: 120px 0;">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 80px;">
+                <h2 style="font-size: 3rem;">Verified Impact</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 16px;">What the pulse says about us.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                <div class="card-glass animate-reveal">
+                    <div style="display: flex; gap: 4px; color: var(--neon-pink); margin-bottom: 20px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 24px; color: var(--soft-white);">"The energy
+                        PulseEvents brought to our corporate gala was unmatched. Cinematic is the only word to describe
+                        it."</p>
+                    <h5 style="margin-bottom: 4px;">James Wilson</h5>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">CEO, TechCorp</p>
+                </div>
+                <div class="card-glass animate-reveal" style="border-color: var(--electric-purple);">
+                    <div style="display: flex; gap: 4px; color: var(--neon-pink); margin-bottom: 20px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 24px; color: var(--soft-white);">"Unbelievable
+                        production quality. Our festival looked better than anything we've done in a decade. Truly
+                        legendary."</p>
+                    <h5 style="margin-bottom: 4px;">Sarah Jenkins</h5>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Festival Director</p>
+                </div>
+                <div class="card-glass animate-reveal">
+                    <div style="display: flex; gap: 4px; color: var(--neon-pink); margin-bottom: 20px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 24px; color: var(--soft-white);">"From first meeting to
+                        the final bow, the team was professional, creative, and efficient. Every detail was perfect."
+                    </p>
+                    <h5 style="margin-bottom: 4px;">Michael Ross</h5>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Wedding Client</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Elite Production CTA (Inspired by Image Bottom) -->
+    <section class="section"
+        style="background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.7)), url('https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1920&q=80') center/cover; position: relative; padding: 150px 0;">
+        <div class="container text-center animate-reveal">
+            <h2 style="font-size: 4.5rem; margin-bottom: 30px;">Global Command</h2>
+            <p style="max-width: 700px; margin-bottom: 50px; color: var(--text-muted); font-size: 1.3rem;">Join the
+                elite roster of brands and artists who trust Pulse for their most critical live moments.</p>
+
+            <div style="display: flex; gap: 40px; justify-content: center; margin-bottom: 80px;">
+                <div class="card-glass" style="width: 250px; padding: 40px;">
+                    <h4 style="color: var(--neon-pink); font-size: 3rem;">500+</h4>
+                    <p style="font-weight: 800; letter-spacing: 1px;">Shows Produced</p>
+                </div>
+                <div class="card-glass" style="width: 250px; padding: 40px;">
+                    <h4 style="color: var(--electric-purple); font-size: 3rem;">12M+</h4>
+                    <p style="font-weight: 800; letter-spacing: 1px;">Attendees reached</p>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 32px;">
+                <a href="contact.html" class="card-glass"
+                    style="padding: 24px 64px; display: flex; align-items: center; gap: 20px; text-decoration: none;">
+                    <i class="fas fa-external-link-alt" style="font-size: 1.5rem;"></i>
+                    <span style="font-weight: 900; font-size: 1.3rem; letter-spacing: 1px;">Contact</span>
+                </a>
+                <a href="services.html" class="card-glass"
+                    style="padding: 24px 64px; display: flex; align-items: center; gap: 20px; text-decoration: none;">
+                    <i class="fas fa-search" style="font-size: 1.5rem;"></i>
+                    <span style="font-weight: 900; font-size: 1.3rem; letter-spacing: 1px;">Explore</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">PULSE</a>
+                    <p style="margin-top: 24px; color: var(--text-muted);">Redefining the standards of global event
+                        management and cinematic production since 2014.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Quick Links</h4>
+                    <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
+
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Connect</h4>
+                    <div style="display: flex; gap: 24px; font-size: 1.5rem;">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Legal</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
+                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
