@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,13 +42,24 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- SECTION 1: Header -->
     <header class="hero-elaborate"
         style="height: 40vh; min-height: 350px; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
-            <h1 style="font-size: 4.5rem;">The Pulse Lens</h1>
-            <p style="color: var(--electric-purple); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
-                Insights into Cinematic Event Production.</p>
+            <h1 class="hero-title">The Pulse Lens</h1>
+            <p class="hero-desc"
+                style="color: var(--electric-purple); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
+                Deep Technical Insights from the Event Floor.</p>
         </div>
     </header>
 
@@ -60,19 +76,19 @@
                     <input type="text" placeholder="Search insights..."
                         style="width: 100%; background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px 16px 16px 56px; border-radius: 12px; color: #fff; outline: none; font-size: 1rem;">
                 </div>
-                <div style="display: flex; gap: 16px;">
-                    <button class="btn btn-primary">Production</button>
+                <div class="flex-responsive" style="justify-content: center; margin-bottom: 80px;">
+                    <button class="btn btn-outline active">All Insights</button>
+                    <button class="btn btn-outline">Technical</button>
                     <button class="btn btn-outline">Strategy</button>
-                    <button class="btn btn-outline">Trends</button>
+                    <button class="btn btn-outline">Artist Relations</button>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- SECTION 3: Blog Grid -->
     <section class="section" style="padding-bottom: 120px;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+            <div class="grid-3">
                 <div class="event-card animate-reveal">
                     <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80"
                         alt="Blog 1">
@@ -188,9 +204,9 @@
                     <h4 style="margin-bottom: 32px;">Legal</h4>
                     <ul
                         style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>

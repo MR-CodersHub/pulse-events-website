@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,13 +42,24 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- Header -->
     <header class="hero-elaborate"
         style="height: 40vh; min-height: 350px; background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.95)), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
-            <h1 style="font-size: 4rem;">Investment</h1>
-            <p style="color: var(--neon-pink); font-weight: 800; letter-spacing: 3px; text-transform: uppercase;">
-                Transparent Tiers for World-Class Production.</p>
+            <h1 class="hero-title">Investment</h1>
+            <p class="hero-desc"
+                style="color: var(--neon-pink); font-weight: 800; letter-spacing: 3px; text-transform: uppercase;">
+                Fair & Transparent Pricing Plans</p>
         </div>
     </header>
 
@@ -52,7 +68,7 @@
     <!-- Pricing Grid -->
     <section class="section">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; align-items: flex-start; margin: 50px 0;">
+            <div class="grid-3" style="align-items: flex-start; margin: 50px 0;">
                 <!-- Tier 1 -->
                 <div class="card-glass animate-reveal">
                     <h3 style="margin-bottom: 20px;">Essential</h3>
@@ -123,12 +139,13 @@
         style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
         <div class="container">
             <div class="text-center animate-reveal" style="margin-bottom: 80px;">
-                <h2 style="font-size: 3rem;">Technical Add-ons</h2>
+                <h2 class="section-title">Technical Deep Dive</h2>
+                <div class="title-divider"></div>
                 <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 16px;">Augment your production with
                     specialized cinematic modules.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+            <div class="grid-4">
                 <div class="card-glass animate-reveal" style="padding: 32px; text-align: center;">
                     <i class="fas fa-microchip"
                         style="font-size: 2rem; color: var(--neon-pink); margin-bottom: 20px;"></i>
@@ -164,12 +181,12 @@
     <section class="section" style="background: var(--midnight-black); padding: 120px 0;">
         <div class="container">
             <div class="text-center animate-reveal" style="margin-bottom: 80px;">
-                <h2 style="font-size: 3rem;">Tier Comparison</h2>
+                <h2 class="section-title">Tier Comparison</h2>
                 <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 16px;">The technical breakdown of our
                     production levels.</p>
             </div>
 
-            <div class="card-glass animate-reveal" style="padding: 0; overflow: hidden;">
+            <div class="card-glass animate-reveal" style="padding: 0; overflow-x: auto;">
                 <table style="width: 100%; border-collapse: collapse; color: var(--soft-white); text-align: left;">
                     <thead style="background: rgba(123, 63, 228, 0.1);">
                         <tr>
@@ -258,7 +275,7 @@
                 <div>
                     <h4 style="margin-bottom: 32px;">Quick Links</h4>
                     <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
-                        
+
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -277,9 +294,9 @@
                     <h4 style="margin-bottom: 32px;">Legal</h4>
                     <ul
                         style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>

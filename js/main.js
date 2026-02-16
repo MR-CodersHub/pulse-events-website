@@ -10,6 +10,8 @@ function initNavbar() {
     const nav = document.querySelector('.navbar');
     const profileTrigger = document.querySelector('.profile-trigger');
     const dropdownMenu = document.querySelector('.dropdown-menu');
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
 
     // Scroll effect
     window.addEventListener('scroll', () => {
@@ -29,6 +31,36 @@ function initNavbar() {
 
         document.addEventListener('click', () => {
             dropdownMenu.classList.remove('active');
+        });
+    }
+
+    // Hamburger Menu Toggle
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            // Prevent body scroll when menu is open
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('.nav-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
     }
 }

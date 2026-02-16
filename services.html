@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,12 +42,23 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- SECTION 1: Header -->
     <header class="hero-elaborate"
         style="height: 50vh; min-height: 400px; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
-            <h1 style="font-size: 5.5rem;">Our Expertise</h1>
-            <p style="color: var(--neon-pink); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
+            <h1 class="hero-title">Our Expertise</h1>
+            <p class="hero-desc"
+                style="color: var(--neon-pink); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
                 Scaling Experiences Beyond Boundaries.</p>
         </div>
     </header>
@@ -53,11 +69,11 @@
     <section class="section" style="padding: 120px 0;">
         <div class="container">
             <div class="text-center animate-reveal" style="margin-bottom: 80px;">
-                <h2 style="font-size: 3rem;">Core Capabilities</h2>
-                <div style="width: 80px; height: 3px; background: var(--electric-purple); margin: 24px auto;"></div>
+                <h2 class="section-title">Core Capabilities</h2>
+                <div class="title-divider"></div>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+            <div class="grid-3">
                 <div class="card-glass animate-reveal">
                     <i class="fas fa-hat-wizard"
                         style="font-size: 3rem; color: var(--electric-purple); margin-bottom: 30px;"></i>
@@ -119,12 +135,11 @@
         style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
         <div class="container">
             <div class="text-center animate-reveal" style="margin-bottom: 80px;">
-                <h2 style="font-size: 3rem;">The Production Journey</h2>
-                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 16px;">How we transform concepts into
-                    cinematic realities.</p>
+                <h2 class="section-title">The Production Journey</h2>
+                <p class="section-desc">How we transform concepts into cinematic realities.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
+            <div class="grid-4">
                 <div class="text-center animate-reveal">
                     <div
                         style="width: 80px; height: 80px; background: var(--glass-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; border: 1px solid var(--electric-purple); color: var(--electric-purple); font-size: 1.5rem; font-weight: 900;">
@@ -166,7 +181,7 @@
         style="background: var(--midnight-black); padding: 120px 0; border-top: 1px solid var(--glass-border);">
         <div class="container" style="max-width: 900px;">
             <div class="text-center animate-reveal" style="margin-bottom: 60px;">
-                <h2 style="font-size: 2.5rem;">Expertise FAQ</h2>
+                <h2 class="section-title">Expertise FAQ</h2>
             </div>
 
             <div class="animate-reveal" style="display: flex; flex-direction: column; gap: 20px;">
@@ -204,7 +219,7 @@
                 <div>
                     <h4 style="margin-bottom: 32px;">Quick Links</h4>
                     <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
-                        
+
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -223,9 +238,9 @@
                     <h4 style="margin-bottom: 32px;">Legal</h4>
                     <ul
                         style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>

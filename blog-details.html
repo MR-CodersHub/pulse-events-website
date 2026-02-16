@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,16 +42,23 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- SECTION 1: Blog Header -->
     <header class="hero-elaborate"
         style="height: 70vh; background: linear-gradient(rgba(11,11,16,0.3), rgba(11,11,16,1)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container hero-content text-center">
             <div class="animate-reveal">
-                <span
-                    style="color: var(--neon-pink); font-weight: 800; letter-spacing: 5px; text-transform: uppercase;">Technical
-                    Trends</span>
-                <h1 style="font-size: 5rem; margin: 24px 0; max-width: 1000px; margin-left: auto; margin-right: auto;">5
-                    Lighting Trends <br>That Define 2026</h1>
+                <span class="hero-subtitle">Technical Trends</span>
+                <h1 class="hero-title">Lighting Trends <br>in 2026</h1>
                 <div
                     style="display: flex; justify-content: center; gap: 32px; color: var(--text-muted); font-size: 0.9rem; font-weight: 700;">
                     <span>BY ALEX RIVERS</span>
@@ -100,8 +112,8 @@
             </div>
 
             <!-- Author Box -->
-            <div class="card-glass animate-reveal"
-                style="margin-top: 100px; display: flex; gap: 40px; align-items: center; padding: 48px;">
+            <div class="card-glass animate-reveal flex-responsive"
+                style="margin-top: 100px; justify-content: flex-start; padding: 48px;">
                 <img src="./assets/img/artist1.jpg" alt="Author"
                     style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--electric-purple);">
                 <div>
@@ -121,8 +133,8 @@
     <section class="section"
         style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
         <div class="container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 60px; text-align: center;">Related Insights</h2>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+            <h2 class="section-title text-center" style="margin-bottom: 60px;">Related Insights</h2>
+            <div class="grid-3">
                 <div class="event-card">
                     <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=600&q=80"
                         alt="Blog">
@@ -166,7 +178,6 @@
                 <div>
                     <h4 style="margin-bottom: 32px;">Quick Links</h4>
                     <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
-                        
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -185,9 +196,9 @@
                     <h4 style="margin-bottom: 32px;">Legal</h4>
                     <ul
                         style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>

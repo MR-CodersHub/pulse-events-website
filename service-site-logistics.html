@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,16 +42,24 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- SECTION 1: Service Hero -->
     <header class="hero-elaborate"
         style="height: 60vh; background: linear-gradient(rgba(11,11,16,0.2), rgba(11,11,16,1)), url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container hero-content">
             <div class="animate-reveal">
-                <span
-                    style="color: var(--electric-purple); font-weight: 800; letter-spacing: 5px; text-transform: uppercase;">Strategic
-                    Infrastructure</span>
-                <h1 style="font-size: 6rem; line-height: 1; margin: 20px 0;">Site <br>Logistics</h1>
-                <p style="font-size: 1.3rem; color: var(--text-muted); max-width: 600px;">End-to-end venue management,
+                <span class="hero-subtitle" style="color: var(--electric-purple);">Strategic Infrastructure</span>
+                <h1 class="hero-title">Site <br>Logistics</h1>
+                <p class="hero-desc" style="max-width: 600px;">End-to-end venue management,
                     crowd control systems, and rapid-response safety infrastructure for thousands.</p>
             </div>
         </div>
@@ -57,15 +70,15 @@
     <!-- SECTION 2: Technical Deep Dive -->
     <section class="section" style="padding: 120px 0;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; align-items: center;">
+            <div class="grid-2" style="align-items: center;">
                 <div class="animate-reveal">
-                    <h2 style="font-size: 3rem; margin-bottom: 32px;">Command & Control</h2>
-                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px;">
+                    <h2 class="section-title">Command & Control</h2>
+                    <p class="section-desc">
                         Large-scale events are living organisms. Our logistics wing manages the flow of energy—from
                         power distribution and crowd density monitoring to emergency egress protocols. We utilize
                         real-time data to ensure that site operations are as invisible as they are effective.</p>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                    <div class="grid-2">
                         <div class="card-glass" style="padding: 32px;">
                             <h4 style="color: var(--electric-purple); margin-bottom: 12px;">Density Tracking</h4>
                             <p style="font-size: 0.9rem; color: var(--text-muted);">AI-powered camera feeds that monitor
@@ -93,11 +106,11 @@
         style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
         <div class="container">
             <div class="text-center animate-reveal" style="margin-bottom: 80px;">
-                <h2 style="font-size: 3rem;">Site Modules</h2>
-                <p style="color: var(--text-muted); font-size: 1.1rem;">The technical skeleton of your event.</p>
+                <h2 class="section-title">Site Modules</h2>
+                <p class="section-desc">The technical skeleton of your event.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+            <div class="grid-3">
                 <div class="card-glass animate-reveal"
                     style="padding: 48px; border-bottom: 4px solid var(--electric-purple);">
                     <i class="fas fa-broadcast-tower"
@@ -130,10 +143,10 @@
     <section class="section"
         style="padding: 150px 0; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
-            <h2 style="font-size: 4rem; margin-bottom: 32px;">Secure Your Perimeter</h2>
-            <p style="color: var(--text-muted); max-width: 700px; margin: 0 0 60px; font-size: 1.25rem;">Flawless
+            <h2 class="section-title">Secure Your Perimeter</h2>
+            <p class="section-desc">Flawless
                 production starts with a solid foundation. Let's engineer your site logistics for peak performance.</p>
-            <div style="display: flex; gap: 24px; justify-content: center;">
+            <div class="flex-responsive" style="justify-content: center;">
                 <a href="booking.html" class="btn btn-primary" style="padding: 20px 60px;">Request Site Audit</a>
                 <a href="services.html" class="btn btn-outline" style="padding: 20px 60px;">Other Services</a>
             </div>
@@ -152,7 +165,6 @@
                 <div>
                     <h4 style="margin-bottom: 32px;">Quick Links</h4>
                     <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
-                        
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -171,9 +183,9 @@
                     <h4 style="margin-bottom: 32px;">Legal</h4>
                     <ul
                         style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>

@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,13 +42,24 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- SECTION 1: Header -->
     <header class="hero-elaborate"
         style="height: 40vh; min-height: 350px; background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.95)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
-            <h1 style="font-size: 5rem;">FAQ Center</h1>
-            <p style="color: var(--electric-purple); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
-                Technical Clarity & Protocol.</p>
+            <h1 class="hero-title">FAQ Center</h1>
+            <p class="hero-desc"
+                style="color: var(--electric-purple); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
+                Your Direct Line to Production Clarity.</p>
         </div>
     </header>
 
@@ -52,7 +68,7 @@
     <!-- SECTION 2: FAQ Categories -->
     <section class="section" style="padding: 120px 0;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 2.5fr; gap: 80px;">
+            <div class="grid-2" style="gap: 40px;">
                 <aside class="animate-reveal">
                     <div class="card-glass" style="position: sticky; top: 120px;">
                         <h3 style="margin-bottom: 32px;">Categories</h3>
@@ -144,22 +160,16 @@
                 <div class="footer-brand">
                     <a href="index.html" class="logo">PULSE</a>
                     <p style="margin-top: 24px; color: var(--text-muted);">Redefining the standards of global event
-                        management and cinematic production.</p>
+                        management and cinematic production since 2014.</p>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 32px;">Resources</h4>
+                    <h4 style="margin-bottom: 32px;">Quick Links</h4>
                     <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
-                        <li><a href="booking.html">Booking Portal</a></li>
-                        <li><a href="faq.html">FAQ Center</a></li>
-                        <li><a href="blog.html">Live Insights</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 style="margin-bottom: 32px;">Legal</h4>
-                    <ul
-                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
+
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div>
@@ -170,10 +180,19 @@
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
+                <div>
+                    <h4 style="margin-bottom: 32px;">Legal</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
             </div>
             <div
-                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem;">
-                &copy; 2026 PULSE EVENTS GLOBAL. ALL RIGHTS RESERVED.
+                style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
+                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
             </div>
         </div>
     </footer>

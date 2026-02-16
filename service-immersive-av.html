@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,16 +42,24 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- SECTION 1: Service Hero -->
     <header class="hero-elaborate"
         style="height: 60vh; background: linear-gradient(rgba(11,11,16,0.2), rgba(11,11,16,1)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container hero-content">
             <div class="animate-reveal">
-                <span
-                    style="color: var(--neon-pink); font-weight: 800; letter-spacing: 5px; text-transform: uppercase;">Sensory
-                    Dominance</span>
-                <h1 style="font-size: 6rem; line-height: 1; margin: 20px 0;">Immersive <br>AV Systems</h1>
-                <p style="font-size: 1.3rem; color: var(--text-muted); max-width: 600px;">Cutting-edge audio-visual
+                <span class="hero-subtitle">Service Depth</span>
+                <h1 class="hero-title">Immersive <br>AV Systems</h1>
+                <p class="hero-desc" style="max-width: 600px;">Cutting-edge audio-visual
                     production involving spatial audio, projection mapping, and neural-sync lighting.</p>
             </div>
         </div>
@@ -57,16 +70,16 @@
     <!-- SECTION 2: Technical Deep Dive -->
     <section class="section" style="padding: 120px 0;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; align-items: center;">
+            <div class="grid-2" style="align-items: center;">
                 <div class="animate-reveal">
-                    <h2 style="font-size: 3rem; margin-bottom: 32px;">The Sonic Architecture</h2>
-                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px;">We
+                    <h2 class="section-title">The Sonic Architecture</h2>
+                    <p class="section-desc">We
                         don't just amplify sound; we sculpt it. Our immersive AV department specializes in high-density
                         loudspeaker arrays that create a "spatial object" environment, allowing sound to move through
                         the venue with physical presence. Combined with pixel-perfect projection mapping, we create
                         worlds that breathe.</p>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                    <div class="grid-2">
                         <div class="card-glass" style="padding: 32px;">
                             <h4 style="color: var(--electric-purple); margin-bottom: 12px;">Spatial Mapping</h4>
                             <p style="font-size: 0.9rem; color: var(--text-muted);">Laser-scanning venues to create
@@ -94,11 +107,11 @@
         style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
         <div class="container">
             <div class="text-center animate-reveal" style="margin-bottom: 80px;">
-                <h2 style="font-size: 3rem;">Technical Modules</h2>
-                <p style="color: var(--text-muted); font-size: 1.1rem;">The engine room of sensory immersion.</p>
+                <h2 class="section-title">Technical Modules</h2>
+                <p class="section-desc">The engine room of sensory immersion.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+            <div class="grid-3">
                 <div class="card-glass animate-reveal"
                     style="padding: 48px; border-bottom: 4px solid var(--electric-purple);">
                     <i class="fas fa-video"
@@ -131,10 +144,10 @@
     <section class="section"
         style="padding: 150px 0; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
-            <h2 style="font-size: 4rem; margin-bottom: 32px;">Immerse Your Crowd</h2>
-            <p style="color: var(--text-muted); max-width: 700px; margin: 0 0 60px; font-size: 1.25rem;">Scale your
+            <h2 class="section-title">Immerse Your Crowd</h2>
+            <p class="section-desc">Scale your
                 production beyond the screen. Let's build an environment that people can feel.</p>
-            <div style="display: flex; gap: 24px; justify-content: center;">
+            <div class="flex-responsive" style="justify-content: center;">
                 <a href="booking.html" class="btn btn-primary" style="padding: 20px 60px;">Request Technical Spec</a>
                 <a href="services.html" class="btn btn-outline" style="padding: 20px 60px;">Other Services</a>
             </div>
@@ -142,7 +155,7 @@
     </section>
 
     <!-- Global Footer -->
-<footer>
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
@@ -153,7 +166,7 @@
                 <div>
                     <h4 style="margin-bottom: 32px;">Quick Links</h4>
                     <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
-                        
+
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -172,9 +185,9 @@
                     <h4 style="margin-bottom: 32px;">Legal</h4>
                     <ul
                         style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>

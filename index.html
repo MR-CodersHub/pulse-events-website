@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,22 +42,26 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- SECTION 1: Hero Section (Inspired by Image Top) -->
     <section class="hero-elaborate"
         style="background: linear-gradient(rgba(11,11,16,0.4), rgba(11,11,16,0.4)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="hero-overlay"></div>
-        <div class="container hero-content" style="margin-left: 0px;">
+        <div class="container hero-content">
             <div class="animate-reveal">
-                <span
-                    style="color: var(--neon-pink); font-weight: 800; letter-spacing: 5px; text-transform: uppercase;">Club
-                    Blaze Presents</span>
-                <h1
-                    style="font-size: 8rem; line-height: 0.9; margin: 24px 0; font-weight: 900; background: linear-gradient(90deg, #fff, #5a2eb8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
-                    MIDNIGHT</h1>
-                <p
-                    style="font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 48px;">
-                    Experience the high-octane energy of cinematic events.</p>
-                <div style="display: flex; gap: 24px;">
+                <span class="hero-subtitle">Club Blaze Presents</span>
+                <h1 class="hero-title">MIDNIGHT</h1>
+                <p class="hero-desc">Experience the high-octane energy of cinematic events.</p>
+                <div class="hero-btns btn-group-responsive" style="display: flex; gap: 24px; margin-top: 48px;">
                     <a href="booking.html" class="btn btn-primary" style="padding: 18px 45px;">Book Your Event <i
                             class="fas fa-arrow-right" style="font-size: 0.8rem;"></i></a>
                     <a href="services.html" class="btn btn-outline" style="padding: 18px 45px;">Explore Pulse</a>
@@ -68,9 +77,9 @@
     <section class="section" style="background: var(--midnight-black); padding: 120px 0;">
         <div class="container">
             <div class="text-center animate-reveal" style="margin-bottom: 80px;">
-                <h2 style="font-size: 3.5rem; letter-spacing: 4px;">Coming Soon</h2>
-                <div style="width: 100px; height: 4px; background: var(--electric-purple); margin: 24px 0;"></div>
-                <p style="color: var(--text-muted); max-width: 600px; margin: 0; font-size: 1.1rem;">The next wave
+                <h2 class="section-title" style="text-align: center;">Coming Soon</h2>
+                <div class="title-divider"></div>
+                <p class="section-desc">The next wave
                     of immersive experiences is about to break. Secure your vision.</p>
             </div>
 
@@ -116,16 +125,14 @@
     <section class="section"
         style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+            <div class="grid-2" style="align-items: center;">
                 <div class="animate-reveal">
-                    <span
-                        style="color: var(--electric-purple); font-weight: 800; letter-spacing: 3px; text-transform: uppercase;">Our
-                        Expertise</span>
-                    <h2 style="font-size: 3.5rem; margin: 20px 0;">Cinematic <br>Scale Production</h2>
-                    <p style="color: var(--text-muted); font-size: 1.2rem; margin-bottom: 40px;">We specialize in
+                    <span class="section-subtitle">Our Expertise</span>
+                    <h2 class="section-title">Cinematic <br>Scale Production</h2>
+                    <p class="section-desc">We specialize in
                         large-scale event production, combining world-class hardware with creative storytelling to
                         transform venues into unforgettable worlds.</p>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                    <div class="grid-2" style="margin-top: 40px;">
                         <div class="card-glass" style="padding: 24px;">
                             <i class="fas fa-lightbulb"
                                 style="color: var(--neon-pink); margin-bottom: 16px; font-size: 1.5rem;"></i>
@@ -154,12 +161,11 @@
     <section class="section" style="background: var(--midnight-black); padding: 120px 0;">
         <div class="container">
             <div class="text-center animate-reveal" style="margin-bottom: 80px;">
-                <h2 style="font-size: 3rem;">Verified Impact</h2>
-                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 16px;">What the pulse says about us.
-                </p>
+                <h2 class="section-title" style="text-align: center;">Verified Impact</h2>
+                <p class="section-desc" style="text-align: center;">What the pulse says about us.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+            <div class="grid-3">
                 <div class="card-glass animate-reveal">
                     <div style="display: flex; gap: 4px; color: var(--neon-pink); margin-bottom: 20px;">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -201,11 +207,11 @@
     <section class="section"
         style="background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.7)), url('https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1920&q=80') center/cover; position: relative; padding: 150px 0;">
         <div class="container text-center animate-reveal">
-            <h2 style="font-size: 4.5rem; margin-bottom: 30px;">Global Command</h2>
-            <p style="max-width: 700px; margin-bottom: 50px; color: var(--text-muted); font-size: 1.3rem;">Join the
+            <h2 class="section-title" style="text-align: center;">Global Command</h2>
+            <p class="section-desc" style="text-align: center;">Join the
                 elite roster of brands and artists who trust Pulse for their most critical live moments.</p>
 
-            <div style="display: flex; gap: 40px; justify-content: center; margin-bottom: 80px;">
+            <div class="flex-responsive" style="justify-content: center; margin-bottom: 80px;">
                 <div class="card-glass" style="width: 250px; padding: 40px;">
                     <h4 style="color: var(--neon-pink); font-size: 3rem;">500+</h4>
                     <p style="font-weight: 800; letter-spacing: 1px;">Shows Produced</p>
@@ -216,7 +222,7 @@
                 </div>
             </div>
 
-            <div style="display: flex; justify-content: center; gap: 32px;">
+            <div class="btn-group-responsive" style="display: flex; justify-content: center; gap: 32px;">
                 <a href="contact.html" class="card-glass"
                     style="padding: 24px 64px; display: flex; align-items: center; gap: 20px; text-decoration: none;">
                     <i class="fas fa-external-link-alt" style="font-size: 1.5rem;"></i>
@@ -262,9 +268,9 @@
                     <h4 style="margin-bottom: 32px;">Legal</h4>
                     <ul
                         style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>

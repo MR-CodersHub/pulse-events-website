@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,13 +42,24 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- SECTION 1: Header -->
     <header class="hero-elaborate"
         style="height: 45vh; min-height: 400px; background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.95)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
-            <h1 style="font-size: 5rem;">Get In Touch</h1>
-            <p style="color: var(--electric-purple); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
-                Let's Orchestrate Your Vision.</p>
+            <h1 class="hero-title">Get In Touch</h1>
+            <p class="hero-desc"
+                style="color: var(--electric-purple); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">
+                The Pulse Network is Always Active.</p>
         </div>
     </header>
 
@@ -52,7 +68,7 @@
     <!-- SECTION 2: Contact Info & Form -->
     <section class="section" style="padding: 120px 0;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px;">
+            <div class="grid-2" style="gap: 100px;">
                 <div class="animate-reveal">
                     <h2 style="font-size: 2.5rem; margin-bottom: 48px;">Production Hub</h2>
                     <div class="card-glass" style="margin-bottom: 40px; padding: 40px;">
@@ -194,9 +210,9 @@
                     <h4 style="margin-bottom: 32px;">Legal</h4>
                     <ul
                         style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>

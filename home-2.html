@@ -25,6 +25,11 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="profile-dropdown">
                     <div class="profile-trigger" id="profile-trigger">
                         <i class="fas fa-user"></i>
@@ -37,14 +42,24 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
     <!-- SECTION 1: Niche Hero (Nightlife Inspired) -->
     <section class="hero-elaborate"
         style="background: linear-gradient(rgba(11,11,16,0.3), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
-            <h1 style="font-size: 8rem; margin-bottom: 24px; color: var(--neon-pink); line-height: 0.8;">Pulse Live</h1>
-            <p style="font-size: 1.5rem; letter-spacing: 6px; text-transform: uppercase; font-weight: 800;">Curating the
+            <h1 class="hero-title" style="color: var(--neon-pink);">Pulse Live</h1>
+            <p class="hero-desc">Curating the
                 Beats of Tomorrow.</p>
-            <div style="margin-top: 48px; display: flex; gap: 24px; justify-content: center;">
+            <div class="hero-btns" style="margin-top: 48px; display: flex; gap: 24px; justify-content: center;">
                 <a href="#lineup" class="btn btn-secondary" style="padding: 18px 40px;">View Lineup</a>
                 <a href="contact.html" class="btn btn-outline" style="padding: 18px 40px;">Technical Specs</a>
             </div>
@@ -57,9 +72,9 @@
     <section class="section" id="lineup" style="background: var(--midnight-black); padding: 120px 0;">
         <div class="container">
             <div class="text-center animate-reveal" style="margin-bottom: 80px;">
-                <h2 style="font-size: 3.5rem; letter-spacing: 4px;">World Class Venues</h2>
-                <div style="width: 100px; height: 4px; background: var(--electric-purple); margin: 24px auto;"></div>
-                <p style="color: var(--text-muted); font-size: 1.1rem;">From stadium peaks to underground secrets.</p>
+                <h2 class="section-title">World Class Venues</h2>
+                <div class="title-divider"></div>
+                <p class="section-desc">From stadium peaks to underground secrets.</p>
             </div>
 
             <div class="interactive-grid">
@@ -92,7 +107,7 @@
     <section class="section"
         style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: center;">
+            <div class="grid-2" style="grid-template-columns: 1fr 1.5fr; align-items: center;">
                 <div class="animate-reveal">
                     <span
                         style="color: var(--neon-pink); font-weight: 800; letter-spacing: 3px; text-transform: uppercase;">Curated
@@ -102,17 +117,15 @@
                         most explosive performers in the global circuit. From techno pioneers to stadium pop stars.</p>
                     <a href="booking.html" class="btn btn-primary">Book Talent</a>
                 </div>
-                <div class="animate-reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                <div class="animate-reveal grid-2">
                     <div class="card-glass" style="text-align: center; padding: 40px;">
-                        <img src="./assets/img/artist1.jpg"
-                            alt="DJ 1"
+                        <img src="./assets/img/artist1.jpg" alt="DJ 1"
                             style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--neon-pink); margin-bottom: 20px;">
                         <h4>CYBER PUNK</h4>
                         <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 8px;">TECHNO / ACID</p>
                     </div>
                     <div class="card-glass" style="text-align: center; padding: 40px;">
-                        <img src="./assets/img/artist2.jpg"
-                            alt="DJ 2"
+                        <img src="./assets/img/artist2.jpg" alt="DJ 2"
                             style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid var(--electric-purple); margin-bottom: 20px;">
                         <h4>NOVA RAY</h4>
                         <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 8px;">MELODIC TRANCE</p>
@@ -132,7 +145,7 @@
                     the high-tier hardware to ensure your event sounds as good as it looks.</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+            <div class="grid-3">
                 <div class="card-glass animate-reveal">
                     <i class="fas fa-volume-up"
                         style="font-size: 2.5rem; color: var(--neon-pink); margin-bottom: 24px;"></i>
@@ -170,7 +183,7 @@
                 <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 48px; font-size: 1.25rem;">Whether
                     it's a 50k stadium festival or an elite club night, Pulse Live brings the technical edge you need.
                 </p>
-                <div style="display: flex; gap: 24px; justify-content: center;">
+                <div class="flex-responsive" style="justify-content: center;">
                     <a href="contact.html" class="btn btn-secondary" style="padding: 20px 60px;">Request Technical
                         Spec</a>
                     <a href="pricing.html" class="btn btn-outline" style="padding: 20px 60px;">View Packages</a>
@@ -191,7 +204,7 @@
                 <div>
                     <h4 style="margin-bottom: 32px;">Quick Links</h4>
                     <ul style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted);">
-                        
+
                         <li><a href="about.html">About</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -210,9 +223,9 @@
                     <h4 style="margin-bottom: 32px;">Legal</h4>
                     <ul
                         style="display: flex; flex-direction: column; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
