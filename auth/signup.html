@@ -7,13 +7,14 @@
     <title>Sign Up | PulseEvents</title>
     <link rel="icon" href="../assets/img/logo.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body
     style="height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--midnight-black);">
 
     <div class="card-glass" style="width: 100%; max-width: 450px;">
-        <div class="text-center" style="margin-bottom: 40px;">
+        <div class="text-center" style="margin-bottom: 40px; text-align: center;">
             <a href="../index.html" class="logo">PULSE</a>
             <h2 style="margin-top: 20px; font-weight: 800;">Join The Pulse</h2>
             <p style="color: var(--text-muted); font-size: 0.9rem;">Start your journey into elite production.</p>
@@ -37,14 +38,20 @@
             <div style="margin-bottom: 20px;">
                 <label
                     style="display: block; font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; font-weight: 700;">Password</label>
-                <input type="password" id="password" required
-                    style="width: 100%; padding: 14px 15px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; color: white; outline: none;">
+                <div style="position: relative;">
+                    <input type="password" id="password" required
+                        style="width: 100%; padding: 14px 48px 14px 15px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; color: white; outline: none; box-sizing: border-box;">
+                    <button type="button" id="signup-eye-btn" onclick="toggleSignupPassword()"
+                        style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; color: var(--text-muted); font-size: 1rem; padding: 4px; transition: color 0.2s; line-height: 1;">
+                        <i class="fas fa-eye" id="signup-eye-icon"></i>
+                    </button>
+                </div>
             </div>
             <!-- Removed Account Type Selection as per requirements -->
 
             <button type="submit" class="btn btn-secondary" style="width: 100%; margin-bottom: 20px;">Initialize
                 Account</button>
-            <p class="text-center" style="font-size: 0.9rem; color: var(--text-muted);">
+            <p class="text-center" style="font-size: 0.9rem; color: var(--text-muted); text-align: center;">
                 Already registered? <a href="login.html" style="color: var(--electric-purple); font-weight: 700;">Sign
                     In</a>
             </p>
@@ -52,6 +59,22 @@
     </div>
 
     <script src="../js/auth.js"></script>
+    <script>
+        function toggleSignupPassword() {
+            const input = document.getElementById('password');
+            const icon = document.getElementById('signup-eye-icon');
+            const btn = document.getElementById('signup-eye-btn');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.replace('fa-eye', 'fa-eye-slash');
+                btn.style.color = 'var(--electric-purple)';
+            } else {
+                input.type = 'password';
+                icon.classList.replace('fa-eye-slash', 'fa-eye');
+                btn.style.color = 'var(--text-muted)';
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -18,7 +18,7 @@
             <a href="index.html" class="logo">PULSE</a>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="home-2.html" class="nav-link">Home2</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
@@ -45,7 +45,7 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="home-2.html" class="nav-link">Home2</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="blog.html" class="nav-link">Blog</a>
@@ -54,7 +54,7 @@
 
     <!-- SECTION 1: Header -->
     <header class="hero-elaborate"
-        style="height: 40vh; min-height: 350px; background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.95)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        style="height: 60vh; min-height: 500px; background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.95)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
             <h1 class="hero-title">FAQ Center</h1>
             <p class="hero-desc"
@@ -65,93 +65,274 @@
 
     <div class="divider-angled"></div>
 
-    <!-- SECTION 2: FAQ Categories -->
-    <section class="section" style="padding: 120px 0;">
-        <div class="container">
-            <div class="grid-2" style="gap: 40px;">
-                <aside class="animate-reveal">
-                    <div class="card-glass" style="position: sticky; top: 120px;">
-                        <h3 style="margin-bottom: 32px;">Categories</h3>
-                        <ul style="display: flex; flex-direction: column; gap: 20px;">
-                            <li><a href="#production" style="color: var(--neon-pink); font-weight: 700;">Production &
-                                    Specs</a></li>
-                            <li><a href="#booking" style="color: var(--text-muted);">Booking & Deposits</a></li>
-                            <li><a href="#logistics" style="color: var(--text-muted);">Logistics & Safety</a></li>
-                            <li><a href="#artist" style="color: var(--text-muted);">Artist Management</a></li>
-                        </ul>
-                    </div>
-                </aside>
+    <!-- SECTION 2: FAQ Accordion -->
+    <section class="section" style="padding: 100px 0 120px;">
+        <div class="container" style="max-width: 780px;">
 
-                <div class="animate-reveal">
-                    <!-- Production -->
-                    <div id="production" style="margin-bottom: 80px;">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--electric-purple);">Production &
-                            Specs</h2>
-                        <div style="display: flex; flex-direction: column; gap: 24px;">
-                            <div class="card-glass">
-                                <h4 style="margin-bottom: 12px;">What audio hardware do you deploy for festivals?</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">We primarily deploy L-Acoustics
-                                    K1/K2 and d&b audiotechnik GSL systems, ensuring world-class sonic pressure and
-                                    clarity across all frequencies.</p>
-                            </div>
-                            <div class="card-glass">
-                                <h4 style="margin-bottom: 12px;">Can you handle 4K pixel-mapped LED environments?</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">Yes, our media server team uses
-                                    Disguise and Resolume to handle massive-scale 4K and 8K LED content delivery with
-                                    zero latency.</p>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Category Tabs -->
+            <div class="animate-reveal"
+                style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 64px;"
+                id="faq-tabs">
+                <button class="faq-tab active" data-cat="all" onclick="filterFaq('all', this)">All</button>
+                <button class="faq-tab" data-cat="production" onclick="filterFaq('production', this)">Production &amp;
+                    Specs</button>
+                <button class="faq-tab" data-cat="booking" onclick="filterFaq('booking', this)">Booking &amp;
+                    Deposits</button>
+                <button class="faq-tab" data-cat="logistics" onclick="filterFaq('logistics', this)">Logistics &amp;
+                    Safety</button>
+                <button class="faq-tab" data-cat="artist" onclick="filterFaq('artist', this)">Artist Management</button>
+            </div>
 
-                    <!-- Booking -->
-                    <div id="booking" style="margin-bottom: 80px;">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--neon-pink);">Booking & Deposits
-                        </h2>
-                        <div style="display: flex; flex-direction: column; gap: 24px;">
-                            <div class="card-glass">
-                                <h4 style="margin-bottom: 12px;">What is your standard deposit structure?</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">We require a 30% technical
-                                    deployment deposit at signing, 40% 30 days prior to the event, and the final 30%
-                                    upon site handover.</p>
-                            </div>
-                            <div class="card-glass">
-                                <h4 style="margin-bottom: 12px;">What is your cancellation policy for large-scale
-                                    events?</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">Cancellations made 60+ days out
-                                    receive a 50% refund of the deposit. Inside 60 days, deposits are non-refundable due
-                                    to logistics and crew allocation.</p>
-                            </div>
-                        </div>
-                    </div>
+            <!-- FAQ Items -->
+            <div class="animate-reveal" id="faq-list" style="display: flex; flex-direction: column; gap: 14px;">
 
-                    <!-- Logistics -->
-                    <div id="logistics">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 40px; color: var(--electric-purple);">Logistics &
-                            Safety</h2>
-                        <div style="display: flex; flex-direction: column; gap: 24px;">
-                            <div class="card-glass">
-                                <h4 style="margin-bottom: 12px;">Do you provide on-site safety officers?</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">Every Pulse production includes a
-                                    lead safety inspector and crowd management supervisor to ensure all builds meet
-                                    international safety standards.</p>
-                            </div>
-                        </div>
+                <div class="faq-item card-glass" data-cat="production"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--electric-purple); font-size: 1rem;">What audio hardware do you deploy
+                            for festivals?</h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            We primarily deploy L-Acoustics K1/K2 and d&amp;b audiotechnik GSL systems, ensuring
+                            world-class sonic pressure and clarity across all frequencies.</p>
                     </div>
                 </div>
+
+                <div class="faq-item card-glass" data-cat="production"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--electric-purple); font-size: 1rem;">Can you handle 4K pixel-mapped LED
+                            environments?</h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Yes, our media server team uses Disguise and Resolume to handle massive-scale 4K and 8K LED
+                            content delivery with zero latency.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass" data-cat="production"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--electric-purple); font-size: 1rem;">Do you handle international events?
+                        </h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Absolutely. We have an international logistics team capable of deploying world-class
+                            production anywhere on the globe.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass" data-cat="booking"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--neon-pink); font-size: 1rem;">What is your standard deposit structure?
+                        </h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            We require a 30% technical deployment deposit at signing, 40% thirty days prior to the
+                            event, and the final 30% upon site handover.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass" data-cat="booking"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--neon-pink); font-size: 1rem;">What is your cancellation policy for
+                            large-scale events?</h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Cancellations made 60+ days out receive a 50% refund of the deposit. Inside 60 days,
+                            deposits are non-refundable due to logistics and crew allocation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass" data-cat="booking"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--neon-pink); font-size: 1rem;">What is the minimum notice period to book
+                            Pulse?</h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Intimate events require 3–4 weeks. For festival or stadium productions we recommend a lead
+                            time of 6–9 months to guarantee the highest quality standard.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass" data-cat="logistics"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--electric-purple); font-size: 1rem;">Do you provide on-site safety
+                            officers?</h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Every Pulse production includes a lead safety inspector and crowd management supervisor to
+                            ensure all builds meet international safety standards.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass" data-cat="logistics"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--electric-purple); font-size: 1rem;">Do you handle permits and regulatory
+                            compliance?</h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Yes. Our site logistics team manages all permits, noise ordinances, crowd control approval,
+                            and fire safety compliance on your behalf — domestically and internationally.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass" data-cat="artist"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--neon-pink); font-size: 1rem;">Can you source specific international
+                            talent?</h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Yes, our artist relations team has direct pipelines to major talent agencies worldwide and
+                            can fulfil both emerging and headline artist requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-glass" data-cat="artist"
+                    style="padding: 0; overflow: hidden; cursor: pointer;" onclick="toggleFaqItem(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 24px 32px;">
+                        <h5 style="color: var(--neon-pink); font-size: 1rem;">What concierge services do you offer
+                            artists?</h5>
+                        <i class="fas fa-plus faq-toggle-icon"
+                            style="color: var(--text-muted); font-size: 0.9rem; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px;"></i>
+                    </div>
+                    <div class="faq-ans" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 32px 24px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            We offer full rider fulfilment, private transport coordination, hotel and hospitality
+                            management, and dedicated on-site artist liaisons throughout the event.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- SECTION 3: Still have questions? -->
     <section class="section"
-        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
-        <div class="container text-center animate-reveal">
-            <h2 style="font-size: 3rem; margin-bottom: 32px;">Pulse Support</h2>
-            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 48px; font-size: 1.25rem;">Our
-                technical desk is available 24/7 for production inquiries and on-site support.</p>
-            <a href="contact.html" class="btn btn-primary" style="padding: 20px 60px;">Contact Production Desk</a>
+        style="background: var(--surface); padding: 100px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container animate-reveal" style="max-width: 680px; text-align: center;">
+            <i class="fas fa-headset" style="font-size: 3rem; color: var(--neon-pink); margin-bottom: 24px;"></i>
+            <h2 style="font-size: 2.4rem; margin-bottom: 16px;">Still have questions?</h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.75; margin-bottom: 40px;">Our
+                technical production desk is available around the clock. Reach out and we'll respond within 4 hours.</p>
+            <a href="contact.html" class="btn btn-primary" style="padding: 18px 56px;">Contact Production Desk</a>
         </div>
     </section>
+
+    <style>
+        .faq-tab {
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--text-muted);
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: all 0.25s;
+            font-family: inherit;
+        }
+
+        .faq-tab:hover {
+            border-color: var(--electric-purple);
+            color: var(--electric-purple);
+        }
+
+        .faq-tab.active {
+            background: var(--electric-purple);
+            border-color: var(--electric-purple);
+            color: #fff;
+        }
+
+        .faq-item.hidden {
+            display: none;
+        }
+
+        .faq-item.open .faq-toggle-icon {
+            transform: rotate(45deg);
+            color: var(--neon-pink);
+        }
+    </style>
+    <script>
+        function toggleFaqItem(item) {
+            const ans = item.querySelector('.faq-ans');
+            const icon = item.querySelector('.faq-toggle-icon');
+            const isOpen = item.classList.contains('open');
+            // close all
+            document.querySelectorAll('#faq-list .faq-item').forEach(el => {
+                el.classList.remove('open');
+                el.querySelector('.faq-ans').style.maxHeight = '0px';
+            });
+            if (!isOpen) {
+                item.classList.add('open');
+                ans.style.maxHeight = ans.scrollHeight + 'px';
+            }
+        }
+        function filterFaq(cat, btn) {
+            document.querySelectorAll('.faq-tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+            // close all open items first
+            document.querySelectorAll('#faq-list .faq-item').forEach(el => {
+                el.classList.remove('open');
+                el.querySelector('.faq-ans').style.maxHeight = '0px';
+                el.classList.toggle('hidden', cat !== 'all' && el.dataset.cat !== cat);
+            });
+        }
+    </script>
 
     <!-- Global Footer -->
     <footer>
@@ -192,7 +373,7 @@
             </div>
             <div
                 style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
-                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+                &copy; 2026 PULSE EVENTS. ALL RIGHTS RESERVED.
             </div>
         </div>
     </footer>

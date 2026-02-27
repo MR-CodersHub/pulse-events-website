@@ -392,6 +392,7 @@ ul {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 3rem;
+        text-align: center;
     }
 
     .hero-subtitle {
@@ -513,6 +514,7 @@ ul {
     font-size: 3.5rem;
     letter-spacing: 4px;
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .section-subtitle {
@@ -521,6 +523,7 @@ ul {
     letter-spacing: 3px;
     text-transform: uppercase;
     display: block;
+    text-align: center;
     margin-bottom: 16px;
 }
 
@@ -541,6 +544,29 @@ ul {
     height: 4px;
     background: var(--electric-purple);
     margin: 24px auto;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 24px 0;
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -813,5 +839,287 @@ footer {
         width: 100% !important;
         justify-content: center !important;
         padding: 20px !important;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE FIXES — New Sections (All Pages)
+   ============================================================ */
+
+/* --- Tablet (≤ 1024px) --- */
+@media (max-width: 1024px) {
+
+    /* Section 6: Partners — 5-col → 3-col */
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    /* Services: Stats — 4-col → 2-col */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /* Contact: Office Hours — 3-col → 1-col */
+    .office-hours-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Blog: Author grid — 3-col → 1-col */
+    .author-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* --- Mobile (≤ 768px) --- */
+@media (max-width: 768px) {
+
+    /* ── Section 6: Trusted Partners (index.html) ── */
+    /* inline grid → 2-col */
+    section [style*="grid-template-columns: repeat(5, 1fr)"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+
+    /* ── Section 7: Newsletter form (index.html & blog.html) ── */
+    /* side-by-side email+btn → stacked */
+    form[style*="display: flex"][style*="gap: 16px"] {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    form[style*="display: flex"][style*="gap: 16px"] input,
+    form[style*="display: flex"][style*="gap: 16px"] button {
+        width: 100% !important;
+    }
+
+    /* Newsletter card inner padding */
+    .card-glass[style*="padding: 80px"] {
+        padding: 36px 24px !important;
+    }
+
+    /* ── Services: Pricing cards ── */
+    /* de-elevated "Most Popular" card on mobile */
+    .card-glass[style*="transform: translateY(-12px)"] {
+        transform: translateY(0) !important;
+    }
+
+    /* ── Services page: 4-col stats grid → 2-col ── */
+    section [style*="grid-template-columns: repeat(4, 1fr)"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+
+    /* ── Contact page: 3-col office hours → 1-col ── */
+    section [style*="grid-template-columns: repeat(3, 1fr)"] {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    /* ── FAQ accordion tab pills — wrap and center ── */
+    #faq-tabs {
+        gap: 8px !important;
+    }
+
+    #faq-tabs .faq-tab {
+        padding: 8px 18px !important;
+        font-size: 0.78rem !important;
+    }
+
+    /* ── FAQ / Contact accordion body padding ── */
+    .faq-ans p,
+    .faq-body p {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* ── Blog: Author cards ── small avatar */
+    /* already handled by grid-3 → 1col via existing rule */
+
+    /* ── Pricing tier list text-align ── */
+    .card-glass ul[style*="text-align: left"] li {
+        font-size: 0.85rem !important;
+    }
+
+    /* ── General: reduce large section padding on mobile ── */
+    section[style*="padding: 120px 0"] {
+        padding: 60px 0 !important;
+    }
+
+    section[style*="padding: 100px 0"] {
+        padding: 56px 0 !important;
+    }
+
+    section[style*="padding: 80px 0"] {
+        padding: 48px 0 !important;
+    }
+}
+
+/* --- Small Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+
+    /* Partners → 1-col on very small screens */
+    section [style*="grid-template-columns: repeat(5, 1fr)"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /* Stats → 1-col (2 was still too tight) */
+    section [style*="grid-template-columns: repeat(4, 1fr)"] {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    /* Stats big numbers — scale down */
+    section [style*="font-size: 3.5rem"] {
+        font-size: 2.5rem !important;
+    }
+
+    /* Newsletter heading */
+    .card-glass h2[style*="font-size: 2.8rem"] {
+        font-size: 1.9rem !important;
+    }
+
+    /* Pricing tier heading */
+    .card-glass h3[style*="font-size: 3rem"] {
+        font-size: 2.2rem !important;
+    }
+
+    /* Pricing card padding */
+    .card-glass[style*="padding: 48px 40px"] {
+        padding: 28px 20px !important;
+    }
+
+    /* Office hours card padding */
+    .card-glass[style*="padding: 48px 36px"] {
+        padding: 28px 20px !important;
+    }
+
+    /* Author spotlight avatar */
+    .card-glass div[style*="width: 90px; height: 90px"] {
+        width: 70px !important;
+        height: 70px !important;
+        font-size: 1.5rem !important;
+    }
+
+    /* FAQ item headers */
+    .faq-item h5,
+    .faq-ans p,
+    .faq-body p {
+        font-size: 0.9rem !important;
+    }
+
+    /* FAQ item padding */
+    .faq-item [style*="padding: 24px 32px"],
+    .faq-item [style*="padding: 28px 36px"] {
+        padding: 18px 20px !important;
+    }
+}
+
+/* ============================================================
+   ABOUT PAGE — Section 4: Vision & Mission grid
+   ============================================================ */
+
+/* Tablet: collapse at 1024px first with reduced gap */
+@media (max-width: 1024px) {
+    .vision-mission-grid {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+    }
+
+    /* Reduce heavy padding inside the vision/mission cards */
+    .vision-mission-grid .card-glass[style*="padding: 60px"] {
+        padding: 36px !important;
+    }
+}
+
+/* Mobile: already 1-col above, just tighten further */
+@media (max-width: 768px) {
+    .vision-mission-grid {
+        gap: 20px !important;
+    }
+
+    .vision-mission-grid .card-glass[style*="padding: 60px"] {
+        padding: 24px !important;
+    }
+
+    .vision-mission-grid h2[style*="font-size: 2.5rem"] {
+        font-size: 1.8rem !important;
+        margin-bottom: 16px !important;
+    }
+
+    .vision-mission-grid i[style*="font-size: 3rem"] {
+        font-size: 2rem !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+/* ============================================================
+   CONTACT PAGE — Section 2: Contact Info + Form layout
+   ============================================================ */
+
+/* At 900px: shrink the massive 100px gap */
+@media (max-width: 900px) {
+    .contact-layout {
+        gap: 40px !important;
+    }
+}
+
+/* At 768px: stack the 2-col outer layout */
+@media (max-width: 768px) {
+    .contact-layout {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+    }
+
+    /* Collapse the inner form field rows (Name+Email, Phone+Type) */
+    .contact-form-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    /* Reduce the tall form card padding */
+    .contact-form-card {
+        padding: 32px 24px !important;
+    }
+
+    /* Full-width inputs and select inside form */
+    .contact-form-card input,
+    .contact-form-card select,
+    .contact-form-card textarea {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Section heading in contact info column */
+    .contact-layout h2[style*="font-size: 2.5rem"] {
+        font-size: 1.9rem !important;
+        margin-bottom: 24px !important;
+    }
+}
+
+/* At 600px: tighten further for small phones */
+@media (max-width: 600px) {
+    .contact-form-card {
+        padding: 24px 16px !important;
+    }
+
+    .contact-form-grid {
+        gap: 14px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Submit button */
+    .contact-form-card .btn {
+        padding: 16px !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* Contact info card padding */
+    .contact-layout .card-glass[style*="padding: 40px"] {
+        padding: 20px !important;
+    }
+
+    /* Info icon size */
+    .contact-layout i[style*="font-size: 1.8rem"] {
+        font-size: 1.3rem !important;
     }
 }

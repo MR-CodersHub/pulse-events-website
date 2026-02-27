@@ -18,7 +18,7 @@
             <a href="index.html" class="logo">PULSE</a>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="home-2.html" class="nav-link">Home2</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="blog.html" class="nav-link active">Blog</a></li>
@@ -45,16 +45,16 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="home-2.html" class="nav-link">Home2</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
-        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
         <a href="contact.html" class="nav-link">Contact</a>
     </div>
 
     <!-- SECTION 1: Header -->
     <header class="hero-elaborate"
-        style="height: 40vh; min-height: 350px; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        style="height: 60vh; min-height: 500px; background: linear-gradient(rgba(11,11,16,0.9), rgba(11,11,16,0.9)), url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
             <h1 class="hero-title">The Pulse Lens</h1>
             <p class="hero-desc"
@@ -76,7 +76,7 @@
                     <input type="text" placeholder="Search insights..."
                         style="width: 100%; background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px 16px 16px 56px; border-radius: 12px; color: #fff; outline: none; font-size: 1rem;">
                 </div>
-                <div class="flex-responsive" style="justify-content: center; margin-bottom: 80px;">
+                <div class="flex-responsive" style="justify-content: center;">
                     <button class="btn btn-outline active">All Insights</button>
                     <button class="btn btn-outline">Technical</button>
                     <button class="btn btn-outline">Strategy</button>
@@ -140,7 +140,151 @@
         </div>
     </section>
 
-    <!-- SECTION 4: Newsletter / Subscription -->
+
+    <!-- SECTION 4A: Author Spotlight -->
+    <section class="section"
+        style="background: var(--surface); padding: 100px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 72px;">
+                <span class="section-subtitle">Meet The Voices</span>
+                <h2 class="section-title" style="text-align: center;">Editorial Lineup</h2>
+                <p class="section-desc" style="text-align: center;">The production minds who write The Pulse Lens.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card-glass animate-reveal"
+                    style="padding: 48px 36px; text-align: center; transition: transform 0.3s;"
+                    onmouseover="this.style.transform='translateY(-6px)'"
+                    onmouseout="this.style.transform='translateY(0)'">
+                    <div
+                        style="width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, var(--electric-purple), var(--neon-pink)); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem; font-weight: 900; color: #fff;">
+                        AK</div>
+                    <h4 style="margin-bottom: 8px;">Aryan Kapoor</h4>
+                    <p
+                        style="color: var(--neon-pink); font-size: 0.8rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 16px;">
+                        PRODUCTION DIRECTOR</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">12+ years crafting
+                        stadium-scale technical designs. Writes on AV systems, lighting choreography, and the art of
+                        stagecraft.</p>
+                    <div
+                        style="display: flex; gap: 16px; justify-content: center; margin-top: 24px; font-size: 1.1rem;">
+                        <a href="#" style="color: var(--text-muted); transition: color 0.2s;"
+                            onmouseover="this.style.color='var(--neon-pink)'"
+                            onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: var(--text-muted); transition: color 0.2s;"
+                            onmouseover="this.style.color='var(--electric-purple)'"
+                            onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="card-glass animate-reveal"
+                    style="padding: 48px 36px; text-align: center; border-color: var(--electric-purple); transition: transform 0.3s;"
+                    onmouseover="this.style.transform='translateY(-6px)'"
+                    onmouseout="this.style.transform='translateY(0)'">
+                    <div
+                        style="width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, var(--neon-pink), var(--electric-purple)); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem; font-weight: 900; color: #fff;">
+                        SR</div>
+                    <h4 style="margin-bottom: 8px;">Sofia Reeves</h4>
+                    <p
+                        style="color: var(--electric-purple); font-size: 0.8rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 16px;">
+                        ARTIST RELATIONS HEAD</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">Former talent manager for
+                        platinum artists. Deep dives into rider logistics, backstage culture, and concierge-level artist
+                        welfare.</p>
+                    <div
+                        style="display: flex; gap: 16px; justify-content: center; margin-top: 24px; font-size: 1.1rem;">
+                        <a href="#" style="color: var(--text-muted); transition: color 0.2s;"
+                            onmouseover="this.style.color='var(--neon-pink)'"
+                            onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: var(--text-muted); transition: color 0.2s;"
+                            onmouseover="this.style.color='var(--electric-purple)'"
+                            onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="card-glass animate-reveal"
+                    style="padding: 48px 36px; text-align: center; transition: transform 0.3s;"
+                    onmouseover="this.style.transform='translateY(-6px)'"
+                    onmouseout="this.style.transform='translateY(0)'">
+                    <div
+                        style="width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, #1a1a2e, var(--electric-purple)); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem; font-weight: 900; color: #fff;">
+                        DM</div>
+                    <h4 style="margin-bottom: 8px;">Dev Malhotra</h4>
+                    <p
+                        style="color: var(--neon-pink); font-size: 0.8rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 16px;">
+                        TECH & TRENDS ANALYST</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">Forecasting the future of
+                        live events — VR stages, AI-driven crowd management, and next-gen spatial audio.</p>
+                    <div
+                        style="display: flex; gap: 16px; justify-content: center; margin-top: 24px; font-size: 1.1rem;">
+                        <a href="#" style="color: var(--text-muted); transition: color 0.2s;"
+                            onmouseover="this.style.color='var(--neon-pink)'"
+                            onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: var(--text-muted); transition: color 0.2s;"
+                            onmouseover="this.style.color='var(--electric-purple)'"
+                            onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4B: Topic Tags / Explore More -->
+    <section class="section"
+        style="background: var(--midnight-black); padding: 100px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 64px;">
+                <span class="section-subtitle">Browse By Topic</span>
+                <h2 class="section-title" style="text-align: center;">Explore The Pulse Library</h2>
+            </div>
+            <div class="animate-reveal"
+                style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 72px;">
+                <span
+                    style="background: rgba(255,47,146,0.12); border: 1px solid var(--neon-pink); color: var(--neon-pink); padding: 12px 28px; border-radius: 100px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; transition: all 0.25s;"
+                    onmouseover="this.style.background='var(--neon-pink)';this.style.color='#fff'"
+                    onmouseout="this.style.background='rgba(255,47,146,0.12)';this.style.color='var(--neon-pink)'">Production
+                    Design</span>
+                <span
+                    style="background: rgba(123,63,228,0.12); border: 1px solid var(--electric-purple); color: var(--electric-purple); padding: 12px 28px; border-radius: 100px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; transition: all 0.25s;"
+                    onmouseover="this.style.background='var(--electric-purple)';this.style.color='#fff'"
+                    onmouseout="this.style.background='rgba(123,63,228,0.12)';this.style.color='var(--electric-purple)'">Lighting
+                    & AV</span>
+                <span
+                    style="background: rgba(255,47,146,0.12); border: 1px solid var(--neon-pink); color: var(--neon-pink); padding: 12px 28px; border-radius: 100px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; transition: all 0.25s;"
+                    onmouseover="this.style.background='var(--neon-pink)';this.style.color='#fff'"
+                    onmouseout="this.style.background='rgba(255,47,146,0.12)';this.style.color='var(--neon-pink)'">Artist
+                    Relations</span>
+                <span
+                    style="background: rgba(123,63,228,0.12); border: 1px solid var(--electric-purple); color: var(--electric-purple); padding: 12px 28px; border-radius: 100px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; transition: all 0.25s;"
+                    onmouseover="this.style.background='var(--electric-purple)';this.style.color='#fff'"
+                    onmouseout="this.style.background='rgba(123,63,228,0.12)';this.style.color='var(--electric-purple)'">Future
+                    Technology</span>
+                <span
+                    style="background: rgba(255,47,146,0.12); border: 1px solid var(--neon-pink); color: var(--neon-pink); padding: 12px 28px; border-radius: 100px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; transition: all 0.25s;"
+                    onmouseover="this.style.background='var(--neon-pink)';this.style.color='#fff'"
+                    onmouseout="this.style.background='rgba(255,47,146,0.12)';this.style.color='var(--neon-pink)'">Event
+                    Strategy</span>
+                <span
+                    style="background: rgba(123,63,228,0.12); border: 1px solid var(--electric-purple); color: var(--electric-purple); padding: 12px 28px; border-radius: 100px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; transition: all 0.25s;"
+                    onmouseover="this.style.background='var(--electric-purple)';this.style.color='#fff'"
+                    onmouseout="this.style.background='rgba(123,63,228,0.12)';this.style.color='var(--electric-purple)'">Crowd
+                    Management</span>
+                <span
+                    style="background: rgba(255,47,146,0.12); border: 1px solid var(--neon-pink); color: var(--neon-pink); padding: 12px 28px; border-radius: 100px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; transition: all 0.25s;"
+                    onmouseover="this.style.background='var(--neon-pink)';this.style.color='#fff'"
+                    onmouseout="this.style.background='rgba(255,47,146,0.12)';this.style.color='var(--neon-pink)'">Brand
+                    Activations</span>
+                <span
+                    style="background: rgba(123,63,228,0.12); border: 1px solid var(--electric-purple); color: var(--electric-purple); padding: 12px 28px; border-radius: 100px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; transition: all 0.25s;"
+                    onmouseover="this.style.background='var(--electric-purple)';this.style.color='#fff'"
+                    onmouseout="this.style.background='rgba(123,63,228,0.12)';this.style.color='var(--electric-purple)'">VR
+                    & Digital Stages</span>
+            </div>
+            <div class="animate-reveal" style="text-align: center;">
+                <a href="#" class="btn btn-outline" style="padding: 18px 64px; font-size: 1rem;">Load More Insights <i
+                        class="fas fa-arrow-right" style="font-size: 0.8rem; margin-left: 10px;"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Newsletter / Subscription -->
     <section class="section"
         style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
         <div class="container">
@@ -212,7 +356,7 @@
             </div>
             <div
                 style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
-                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+                &copy; 2026 PULSE EVENTS. ALL RIGHTS RESERVED.
             </div>
         </div>
     </footer>

@@ -18,7 +18,7 @@
             <a href="index.html" class="logo">PULSE</a>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="home-2.html" class="nav-link">Live</a></li>
+                <li><a href="home-2.html" class="nav-link">Home2</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
@@ -45,16 +45,16 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="home-2.html" class="nav-link">Live</a>
+        <a href="home-2.html" class="nav-link">Home2</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="blog.html" class="nav-link">Blog</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
     </div>
 
     <!-- SECTION 1: Header -->
     <header class="hero-elaborate"
-        style="height: 45vh; min-height: 400px; background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.95)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        style="height: 60vh; min-height: 500px; background: linear-gradient(rgba(11,11,16,0.95), rgba(11,11,16,0.95)), url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center animate-reveal">
             <h1 class="hero-title">Get In Touch</h1>
             <p class="hero-desc"
@@ -68,7 +68,7 @@
     <!-- SECTION 2: Contact Info & Form -->
     <section class="section" style="padding: 120px 0;">
         <div class="container">
-            <div class="grid-2" style="gap: 100px;">
+            <div class="contact-layout grid-2" style="gap: 100px;">
                 <div class="animate-reveal">
                     <h2 style="font-size: 2.5rem; margin-bottom: 48px;">Production Hub</h2>
                     <div class="card-glass" style="margin-bottom: 40px; padding: 40px;">
@@ -104,8 +104,10 @@
                 </div>
 
                 <div class="animate-reveal">
-                    <form id="contact-form" onsubmit="handleContact(event)" class="card-glass" style="padding: 60px;">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
+                    <form id="contact-form" onsubmit="handleContact(event)" class="card-glass contact-form-card"
+                        style="padding: 60px;">
+                        <div class="contact-form-grid"
+                            style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
                             <div style="display: flex; flex-direction: column; gap: 10px;">
                                 <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">FULL
                                     NAME</label>
@@ -119,7 +121,8 @@
                                     style="background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px; color: #fff; outline: none;">
                             </div>
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
+                        <div class="contact-form-grid"
+                            style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
                             <div style="display: flex; flex-direction: column; gap: 10px;">
                                 <label
                                     style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">PHONE</label>
@@ -179,6 +182,211 @@
         </div>
     </section>
 
+    <!-- SECTION 4: Office Hours & Availability -->
+    <section class="section"
+        style="background: var(--midnight-black); padding: 120px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="text-center animate-reveal" style="margin-bottom: 80px;">
+                <span class="section-subtitle">We're Always On</span>
+                <h2 class="section-title" style="text-align: center;">Office Hours & Availability</h2>
+                <p class="section-desc" style="text-align: center;">Our production desks operate across multiple time
+                    zones. Here's when to reach us.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                <div class="card-glass animate-reveal" style="padding: 48px 36px; border-color: var(--neon-pink);">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
+                        <div
+                            style="width: 48px; height: 48px; background: rgba(255,47,146,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-sun" style="color: var(--neon-pink); font-size: 1.3rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 4px;">South Asia Desk</h4>
+                            <p style="color: var(--text-muted); font-size: 0.8rem;">IST (UTC +5:30)</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 14px;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">Monday – Friday</span>
+                            <span style="color: var(--soft-white); font-weight: 700;">9 AM – 9 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">Saturday</span>
+                            <span style="color: var(--soft-white); font-weight: 700;">10 AM – 6 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">Sunday</span>
+                            <span style="color: var(--neon-pink); font-weight: 700;">Emergency Only</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--glass-border); display: flex; align-items: center; gap: 10px;">
+                        <div
+                            style="width: 10px; height: 10px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 8px #22c55e;">
+                        </div>
+                        <span style="font-size: 0.85rem; color: #22c55e; font-weight: 700;">Currently Available</span>
+                    </div>
+                </div>
+                <div class="card-glass animate-reveal" style="padding: 48px 36px;">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
+                        <div
+                            style="width: 48px; height: 48px; background: rgba(123,63,228,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-moon" style="color: var(--electric-purple); font-size: 1.3rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 4px;">Middle East Desk</h4>
+                            <p style="color: var(--text-muted); font-size: 0.8rem;">GST (UTC +4:00)</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 14px;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">Sunday – Thursday</span>
+                            <span style="color: var(--soft-white); font-weight: 700;">9 AM – 8 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">Friday</span>
+                            <span style="color: var(--soft-white); font-weight: 700;">11 AM – 4 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">Saturday</span>
+                            <span style="color: var(--neon-pink); font-weight: 700;">Closed</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--glass-border); display: flex; align-items: center; gap: 10px;">
+                        <div
+                            style="width: 10px; height: 10px; background: var(--electric-purple); border-radius: 50%; box-shadow: 0 0 8px var(--electric-purple);">
+                        </div>
+                        <span style="font-size: 0.85rem; color: var(--electric-purple); font-weight: 700;">Active
+                            Hours</span>
+                    </div>
+                </div>
+                <div class="card-glass animate-reveal" style="padding: 48px 36px;">
+                    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
+                        <div
+                            style="width: 48px; height: 48px; background: rgba(255,47,146,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-cloud" style="color: var(--neon-pink); font-size: 1.3rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 4px;">Europe Desk</h4>
+                            <p style="color: var(--text-muted); font-size: 0.8rem;">CET (UTC +1:00)</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 14px;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">Monday – Friday</span>
+                            <span style="color: var(--soft-white); font-weight: 700;">8 AM – 7 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">Saturday</span>
+                            <span style="color: var(--soft-white); font-weight: 700;">10 AM – 3 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">Sunday</span>
+                            <span style="color: var(--neon-pink); font-weight: 700;">Closed</span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--glass-border); display: flex; align-items: center; gap: 10px;">
+                        <div
+                            style="width: 10px; height: 10px; background: #f59e0b; border-radius: 50%; box-shadow: 0 0 8px #f59e0b;">
+                        </div>
+                        <span style="font-size: 0.85rem; color: #f59e0b; font-weight: 700;">Off-Peak Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FAQ Accordion -->
+    <section class="section"
+        style="background: var(--surface); padding: 120px 0; border-top: 1px solid var(--glass-border);">
+        <div class="container" style="max-width: 860px;">
+            <div class="text-center animate-reveal" style="margin-bottom: 80px;">
+                <span class="section-subtitle">Quick Answers</span>
+                <h2 class="section-title" style="text-align: center;">Frequently Asked Questions</h2>
+            </div>
+            <div class="animate-reveal" style="display: flex; flex-direction: column; gap: 16px;" id="contact-faq">
+                <div class="card-glass faq-item" style="padding: 0; overflow: hidden; cursor: pointer;"
+                    onclick="toggleFaq(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 28px 36px;">
+                        <h5 style="color: var(--electric-purple);">How quickly will I receive a response after
+                            submitting?</h5>
+                        <i class="fas fa-chevron-down faq-icon"
+                            style="color: var(--text-muted); transition: transform 0.3s;"></i>
+                    </div>
+                    <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 36px 28px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Our production lead typically responds within 4 business hours. For urgent inquiries on
+                            active productions, use the priority line: <strong style="color: var(--soft-white);">+91
+                                98765 43210</strong>.</p>
+                    </div>
+                </div>
+                <div class="card-glass faq-item" style="padding: 0; overflow: hidden; cursor: pointer;"
+                    onclick="toggleFaq(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 28px 36px;">
+                        <h5 style="color: var(--neon-pink);">Can I request a site survey before committing?</h5>
+                        <i class="fas fa-chevron-down faq-icon"
+                            style="color: var(--text-muted); transition: transform 0.3s;"></i>
+                    </div>
+                    <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 36px 28px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Absolutely. We offer complimentary site surveys for events exceeding 500 guests. Our
+                            technical team will assess acoustics, power requirements, and logistics within 48 hours of
+                            your request.</p>
+                    </div>
+                </div>
+                <div class="card-glass faq-item" style="padding: 0; overflow: hidden; cursor: pointer;"
+                    onclick="toggleFaq(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 28px 36px;">
+                        <h5 style="color: var(--electric-purple);">Do you handle permits and regulatory compliance?</h5>
+                        <i class="fas fa-chevron-down faq-icon"
+                            style="color: var(--text-muted); transition: transform 0.3s;"></i>
+                    </div>
+                    <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 36px 28px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Yes. Our site logistics team manages all permits, noise ordinances, crowd control approval,
+                            and fire safety compliance on your behalf — domestically and internationally.</p>
+                    </div>
+                </div>
+                <div class="card-glass faq-item" style="padding: 0; overflow: hidden; cursor: pointer;"
+                    onclick="toggleFaq(this)">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; padding: 28px 36px;">
+                        <h5 style="color: var(--neon-pink);">What's the minimum notice period to book Pulse?</h5>
+                        <i class="fas fa-chevron-down faq-icon"
+                            style="color: var(--text-muted); transition: transform 0.3s;"></i>
+                    </div>
+                    <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+                        <p
+                            style="padding: 0 36px 28px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.75;">
+                            Intimate events require 3–4 weeks. For festival or stadium productions, we recommend a lead
+                            time of 6–9 months to guarantee the highest quality standard and crew availability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleFaq(item) {
+            const body = item.querySelector('.faq-body');
+            const icon = item.querySelector('.faq-icon');
+            const isOpen = body.style.maxHeight !== '0px' && body.style.maxHeight !== '';
+            // Close all
+            document.querySelectorAll('#contact-faq .faq-body').forEach(b => b.style.maxHeight = '0px');
+            document.querySelectorAll('#contact-faq .faq-icon').forEach(ic => ic.style.transform = 'rotate(0deg)');
+            if (!isOpen) {
+                body.style.maxHeight = body.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+
     <!-- Global Footer -->
     <footer>
         <div class="container">
@@ -218,7 +426,7 @@
             </div>
             <div
                 style="text-align: center; padding-top: 48px; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px;">
-                &copy; 2026 DESIGNED BY MR CODERSHUB. ALL RIGHTS RESERVED.
+                &copy; 2026 PULSE EVENTS. ALL RIGHTS RESERVED.
             </div>
         </div>
     </footer>
